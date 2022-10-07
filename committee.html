@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+		<title>TheEvent Bootstrap Template - Speaker Details</title>
+		<meta content="" name="description">
+		<meta content="" name="keywords">
+
+		<!-- Favicons -->
+		<link href="assets/img/favicon.png" rel="icon">
+		<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+		<!-- Google Fonts -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+			rel="stylesheet">
+
+		<!-- Vendor CSS Files -->
+		<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+		<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+		<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+		<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+		<!-- Template Main CSS File -->
+		<link href="assets/css/style.css" rel="stylesheet">
+
+		<!-- =======================================================
+  * Template Name: TheEvent - v4.9.0
+  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+	</head>
+	<style>
+		/*--------------------------------------------------------------
+		# Team
+		--------------------------------------------------------------*/
+		.team {
+			background: #fff;
+			padding: 60px 0;
+		}
+
+		.team .member {
+			margin-bottom: 20px;
+			overflow: hidden;
+			border-radius: 5px;
+			background: #fff;
+			box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+		}
+
+		.team .member .member-img {
+			position: relative;
+			height: 200px;
+			width: 200px;
+			display: flex;
+			justify-content: center;
+			overflow: hidden;
+		}
+
+		.team .member .social {
+			position: absolute;
+			left: 0;
+			bottom: 30px;
+			right: 0;
+			opacity: 0;
+			transition: ease-in-out 0.3s;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.team .member .social a {
+			transition: color 0.3s;
+			margin: 0 3px;
+			border-radius: 50px;
+			width: 36px;
+			height: 36px;
+			background: rgba(239, 102, 3, 0.8);
+			transition: ease-in-out 0.3s;
+			color: #fff;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.team .member .social a:hover {
+			background: #fc8129;
+		}
+
+		.team .member .social i {
+			font-size: 18px;
+			line-height: 0;
+		}
+
+		.team .member .member-info {
+			padding: 25px 15px;
+			text-align: center;
+		}
+
+		.team .member .member-info h4 {
+			font-weight: 700;
+			margin-bottom: 5px;
+			font-size: 18px;
+			color: #2a2c39;
+		}
+
+		.team .member .member-info span {
+			display: block;
+			font-size: 13px;
+			font-weight: 400;
+			color: #aaaaaa;
+		}
+
+		.team .member .member-info p {
+			font-style: italic;
+			font-size: 14px;
+			line-height: 26px;
+			color: #777777;
+		}
+
+		.team .member:hover .social {
+			opacity: 1;
+			bottom: 15px;
+		}
+	</style>
+	<body>
+
+		<!-- ======= Header ======= -->
+		<header id="header" class="d-flex align-items-center header-inner">
+			<div class="container-fluid container-xxl d-flex align-items-center">
+
+				<div id="logo" class="me-auto">
+					<!-- Uncomment below if you prefer to use a text logo -->
+					<!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+					<a href="index.html" class="scrollto"><img src="assets/img/logo.png" alt="" title=""></a>
+				</div>
+
+				<nav id="navbar" class="navbar order-last order-lg-0">
+					<ul>
+						<li><a class="nav-link scrollto " href="#hero">Home</a></li>
+						<li><a class="nav-link scrollto" href="#about">About</a></li>
+						<li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
+						<li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
+						<li><a class="nav-link scrollto" href="#venue">Venue</a></li>
+						<li><a class="nav-link scrollto" href="#hotels">Hotels</a></li>
+						<li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+						<li><a class="nav-link scrollto" href="#supporters">Sponsors</a></li>
+						<!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="#">Drop Down 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="#">Deep Drop Down 1</a></li>
+                <li><a href="#">Deep Drop Down 2</a></li>
+                <li><a href="#">Deep Drop Down 3</a></li>
+                <li><a href="#">Deep Drop Down 4</a></li>
+                <li><a href="#">Deep Drop Down 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Drop Down 2</a></li>
+            <li><a href="#">Drop Down 3</a></li>
+            <li><a href="#">Drop Down 4</a></li>
+          </ul>
+        </li> -->
+						<li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+					</ul>
+					<i class="bi bi-list mobile-nav-toggle"></i>
+				</nav><!-- .navbar -->
+				<a class="buy-tickets scrollto" href="#buy-tickets">Buy Tickets</a>
+
+			</div>
+		</header><!-- End Header -->
+
+		<main id="main" class="main-page">
+
+			<!-- ======= Speaker Details Sectionn ======= -->
+			<section id="speakers-details">
+				<div class="container">
+					<div class="section-header">
+						<h2>Organization Committee</h2>
+						<p>MLNLP2022</p>
+					</div>
+
+					<section id="schedule" class="section team">
+						<div class="tab-content container row justify-content-center" data-aos="fade-up"
+							data-aos-delay="200">
+							<div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+								<h2 style="margin-top: 20px;">General Chairs</h2>
+								<div class="row schedule-item">
+									<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+										<div class="member aos-init aos-animate" data-aos="fade-up">
+											<div class="speaker" style="height: 200px; width: 200px;margin: 10px;">
+												<img src="assets/img/speakers/zhouming.jpg" alt="">
+											</div>
+											<div class="member-info">
+												<h4><a
+														href="https://scholar.google.co.jp/citations?user=a0w5c0gAAAAJ">周明</a>
+												</h4>
+												<span>澜舟科技</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+										<div class="member aos-init aos-animate" data-aos="fade-up">
+											<div class="speaker" style="height: 200px; width: 200px;margin: 10px;">
+												<img src="assets/img/speakers/yanshuicheng.jpg" alt="">
+											</div>
+											<div class="member-info">
+												<h4><a href="https://yanshuicheng.ai/">颜水成</a></h4>
+												<span>Sea AI</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+										<div class="member aos-init aos-animate" data-aos="fade-up">
+											<div class="speaker" style="height: 200px; width: 200px;margin: 10px;">
+												<img src="assets/img/speakers/xuruifeng.png" alt="">
+											</div>
+											<div class="member-info">
+												<h4><a href="http://www.hitsz-hlt.com/~xuruifeng/">徐睿峰</a></h4>
+												<span>哈尔滨工业大学（深圳）</span>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="tab-content container row justify-content-center" data-aos="fade-up"
+							data-aos-delay="200">
+							<div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+								<h2 style="margin-top: 30px;">Program Committee Chairs</h2>
+								<div class="row schedule-item">
+									<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+										<div class="member aos-init aos-animate" data-aos="fade-up">
+											<div class="speaker" style="height: 200px; width: 200px;margin: 10px;">
+												<img src="assets/img/committee/liuqian.jpg" alt="">
+											</div>
+											<div class="member-info">
+												<h4><a
+														href="https://scholar.google.co.jp/citations?user=bcbeUo0AAAAJ">刘乾</a>
+												</h4>
+												<span>Sea AI</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+										<div class="member aos-init aos-animate" data-aos="fade-up">
+											<div class="speaker" style="height: 200px; width: 200px;margin: 10px;">
+												<img src="assets/img/committee/xudongkuan.jpg" alt="">
+											</div>
+											<div class="member-info">
+												<h4><a href="http://www.personal.psu.edu/dux19/">胥栋宽</a></h4>
+												<span>北卡罗来纳州立大学</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-content container row justify-content-center" data-aos="fade-up"
+							data-aos-delay="200">
+							<div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+								<h2 style="margin-top: 30px;">Website Chairs</h2>
+								<div class="row schedule-item">
+									<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+										<div class="member aos-init aos-animate" data-aos="fade-up">
+											<div class="speaker" style="height: 200px; width: 200px;margin: 10px;">
+												<img src="assets/img/committee/chenqiguang.jpg" alt="">
+											</div>
+											<div class="member-info">
+												<h4><a href="https://lightchen233.github.io/">陈麒光</a> (Chair)</h4>
+												<span>哈尔滨工业大学</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+										<div class="member aos-init aos-animate" data-aos="fade-up">
+											<div class="speaker" style="height: 200px; width: 200px;margin: 10px;">
+												<img src="assets/img/committee/fengxiachong.jpg" alt="">
+											</div>
+											<div class="member-info">
+												<h4><a href="http://xcfeng.net/">冯夏冲</a> (Vice Chair)</h4>
+												<span>哈尔滨工业大学</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+										<div class="member aos-init aos-animate" data-aos="fade-up">
+											<div class="speaker" style="height: 200px; width: 200px;margin: 10px;">
+												<img src="assets/img/committee/shuyiheng.png" alt="">
+											</div>
+											<div class="member-info">
+												<h4><a href="https://yihengshu.github.io/">舒意恒</a> (Vice Chair)</h4>
+												<span>南京大学</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="tab-content container row justify-content-center" data-aos="fade-up"
+							data-aos-delay="200">
+							<div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+								<h2 style="margin-top: 30px;">Publicity Chairs</h2>
+								<div class="row schedule-item">
+									<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+										<div class="member aos-init aos-animate" data-aos="fade-up">
+											<div class="speaker" style="height: 200px; width: 200px;margin: 10px;">
+												<img src="assets/img/speakers/yinjianhua.jpg" alt="">
+											</div>
+											<div class="member-info">
+												<h4><a href="https://jhyin12.github.io/">尹建华</a></h4>
+												<span>山东大学</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+										<div class="member aos-init aos-animate" data-aos="fade-up">
+											<div class="speaker" style="height: 200px; width: 200px;margin: 10px;">
+												<img src="assets/img/speakers/liubang.png" alt="">
+											</div>
+											<div class="member-info">
+												<h4><a href="http://www-labs.iro.umontreal.ca/~liubang/">刘邦</a></h4>
+												<span>加拿大蒙特利尔大学</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+										<div class="member aos-init aos-animate" data-aos="fade-up">
+											<div class="speaker" style="height: 200px; width: 200px;margin: 10px;">
+												<img src="assets/img/speakers/liuhan.jpg" alt="">
+											</div>
+											<div class="member-info">
+												<h4><a href="http://faculty.dlut.edu.cn/liuhan/en/index.htm">刘晗</a></h4>
+												<span>大连理工大学</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-content container row justify-content-center" data-aos="fade-up"
+							data-aos-delay="200">
+							<div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+								<h2 style="margin-top: 20px;">Online Chairs</h2>
+								<div class="row schedule-item">
+
+									<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+										<div class="member aos-init aos-animate" data-aos="fade-up">
+											<div class="speaker" style="height: 200px; width: 200px;margin: 10px;">
+												<img src="assets/img/committee/liuhongyu.jpg" alt="">
+											</div>
+											<div class="member-info">
+												<h4><a href="#">刘洪宇</a></h4>
+												<span>哈尔滨工业大学</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+										<div class="member aos-init aos-animate" data-aos="fade-up">
+											<div class="speaker" style="height: 200px; width: 200px;margin: 10px;">
+												<img src="assets/img/committee/weifuxuan.jpg" alt="">
+											</div>
+											<div class="member-info">
+												<h4><a href="https://awake020.github.io/">魏福煊</a></h4>
+												<span>哈尔滨工业大学</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- <div class="tab-content container row justify-content-center" data-aos="fade-up"
+							data-aos-delay="200">
+							<div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+								<h2 style="margin-top: 20px;">Session Chairs</h2>
+								<hr style="color: #b4bdda;">
+								<div class="row schedule-item" style="padding-top: 0px;">
+									<div class="col-md-12">
+										<div class="tab-content container row justify-content-center"
+											data-aos="fade-up" data-aos-delay="200" style="padding-top: 0px;">
+											<div role="tabpanel" class="col-lg-9 tab-pane fade show active"
+												id="day-1" style="width: 90%;">
+												<h3 style="margin-top: 20px;font-size: 24px;">
+													Efficient AI Session</h3>
+												<div class="row schedule-item">
+													<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+														<div class="member aos-init aos-animate" data-aos="fade-up">
+															<div class="speaker"
+																style="height: 200px; width: 200px;margin: 10px;">
+																<img src="assets/img/committee/wangyaqing.jpg"
+																	alt="">
+															</div>
+															<div class="member-info">
+																<h4><a href="https://yaqingwang.github.io/">王亚庆</a>
+																</h4>
+																<span>Google Research</span>
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+														<div class="member aos-init aos-animate" data-aos="fade-up">
+															<div class="speaker"
+																style="height: 200px; width: 200px;margin: 10px;">
+																<img src="assets/img/committee/xudongkuan.jpg"
+																	alt="">
+															</div>
+															<div class="member-info">
+																<h4><a
+																		href="http://www.personal.psu.edu/dux19/">胥栋宽</a>
+																</h4>
+																<span>北卡罗来纳州立大学</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-content container row justify-content-center" data-aos="fade-up"
+											data-aos-delay="200" style="padding-top: 0px;">
+											<div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1"
+												style="width: 90%;">
+												<h3 style="margin-top: 20px;font-size: 24px;">Trust AI Session
+												</h3>
+												<div class="row schedule-item">
+													<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+														<div class="member aos-init aos-animate" data-aos="fade-up">
+															<div class="speaker"
+																style="height: 200px; width: 200px;margin: 10px;">
+																<img src="assets/img/committee/dumengnan.jpg" alt="">
+															</div>
+															<div class="member-info">
+																<h4><a href="https://mengnandu.com/">杜梦楠</a></h4>
+																<span>美国德州农工大学</span>
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+														<div class="member aos-init aos-animate" data-aos="fade-up">
+															<div class="speaker"
+																style="height: 200px; width: 200px;margin: 10px;">
+																<img src="assets/img/committee/pangtianyu.jpg" alt="">
+															</div>
+															<div class="member-info">
+																<h4><a href="https://p2333.github.io/">庞天宇</a></h4>
+																<span>Sea AI</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-content container row justify-content-center" data-aos="fade-up"
+											data-aos-delay="200" style="padding-top: 0px;">
+											<div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1"
+												style="width: 90%;">
+												<h3 style="margin: 0px;font-size: 24px;">Recommendation Session</h3>
+												<div class="row schedule-item">
+													<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+														<div class="member aos-init aos-animate" data-aos="fade-up">
+															<div class="speaker"
+																style="height: 200px; width: 200px;margin: 10px;">
+																<img src="assets/img/committee/zhaoxiangyu.jpg" alt="">
+															</div>
+															<div class="member-info">
+																<h4><a href="https://zhaoxyai.github.io/">赵翔宇</a></h4>
+																<span>香港城市大学</span>
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+										<div class="tab-content container row justify-content-center" data-aos="fade-up"
+											data-aos-delay="200" style="padding-top: 0px;">
+											<div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1"
+												style="width: 90%;">
+												<h3 style="margin-top: 20px;font-size: 24px;">Speech Processing
+													Session</h3>
+												<div class="row schedule-item">
+													<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+														<div class="member aos-init aos-animate" data-aos="fade-up">
+															<div class="speaker"
+																style="height: 200px; width: 200px;margin: 10px;">
+																<img src="assets/img/committee/renyi.png" alt="">
+															</div>
+															<div class="member-info">
+																<h4><a href="https://rayeren.github.io/">任意</a></h4>
+																<span>Sea AI</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="tab-content container row justify-content-center" data-aos="fade-up"
+											data-aos-delay="200" style="padding-top: 0px;">
+											<div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1"
+												style="width: 90%;">
+												<h3 style="margin-top: 20px;font-size: 24px;">
+													Machine Translation Session
+												</h3>
+												<div class="row schedule-item">
+													<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+														<div class="member aos-init aos-animate" data-aos="fade-up">
+															<div class="speaker"
+																style="height: 200px; width: 200px;margin: 10px;">
+																<img src="assets/img/committee/libei.jpg" alt="">
+															</div>
+															<div class="member-info">
+																<h4><a
+																		href="https://www.nlplab.com/teamContent?id=145&isStudent=false">李北</a>
+																</h4>
+																<span>东北大学</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-content container row justify-content-center" data-aos="fade-up"
+											data-aos-delay="200" style="padding-top: 0px;">
+											<div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1"
+												style="width: 90%;">
+												<h3 style="margin-top: 20px;font-size: 24px;">
+													Code Intelligence Session</h3>
+												<div class="row schedule-item">
+													<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+														<div class="member aos-init aos-animate" data-aos="fade-up">
+															<div class="speaker"
+																style="height: 200px; width: 200px;margin: 10px;">
+																<img src="assets/img/committee/liuqian.jpg" alt="">
+															</div>
+															<div class="member-info">
+																<h4><a
+																		href="https://scholar.google.co.jp/citations?user=bcbeUo0AAAAJ">刘乾</a>
+																</h4>
+																<span>Sea AI</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+
+							</div>
+						</div> -->
+						<div class="tab-content container row justify-content-center" data-aos="fade-up"
+							data-aos-delay="200">
+							<div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+								<h2 style="margin-top: 20px;">Session Chairs</h2>
+								<hr style="color: #b4bdda;">
+								<div class="row schedule-item" style="padding-top: 0px;">
+									<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+										<div class="member aos-init aos-animate" data-aos="fade-up">
+											<div class="speaker"
+												style="height: 200px; width: 200px;margin: 10px;">
+												<img src="assets/img/committee/wangyaqing.jpg"
+													alt="">
+											</div>
+											<div class="member-info">
+												<h4><a href="https://yaqingwang.github.io/">王亚庆</a>
+												</h4>
+												<span>Google Research</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+										<div class="member aos-init aos-animate" data-aos="fade-up">
+											<div class="speaker"
+												style="height: 200px; width: 200px;margin: 10px;">
+												<img src="assets/img/committee/xudongkuan.jpg"
+													alt="">
+											</div>
+											<div class="member-info">
+												<h4><a
+														href="http://www.personal.psu.edu/dux19/">胥栋宽</a>
+												</h4>
+												<span>北卡罗来纳州立大学</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+										<div class="member aos-init aos-animate" data-aos="fade-up">
+											<div class="speaker"
+												style="height: 200px; width: 200px;margin: 10px;">
+												<img src="assets/img/committee/dumengnan.jpg" alt="">
+											</div>
+											<div class="member-info">
+												<h4><a href="https://mengnandu.com/">杜梦楠</a></h4>
+												<span>美国德州农工大学</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+										<div class="member aos-init aos-animate" data-aos="fade-up">
+											<div class="speaker"
+												style="height: 200px; width: 200px;margin: 10px;">
+												<img src="assets/img/committee/pangtianyu.jpg" alt="">
+											</div>
+											<div class="member-info">
+												<h4><a href="https://p2333.github.io/">庞天宇</a></h4>
+												<span>Sea AI</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+										<div class="member aos-init aos-animate" data-aos="fade-up">
+											<div class="speaker"
+												style="height: 200px; width: 200px;margin: 10px;">
+												<img src="assets/img/committee/zhaoxiangyu.jpg" alt="">
+											</div>
+											<div class="member-info">
+												<h4><a href="https://zhaoxyai.github.io/">赵翔宇</a></h4>
+												<span>香港城市大学</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+										<div class="member aos-init aos-animate" data-aos="fade-up">
+											<div class="speaker"
+												style="height: 200px; width: 200px;margin: 10px;">
+												<img src="assets/img/committee/renyi.png" alt="">
+											</div>
+											<div class="member-info">
+												<h4><a href="https://rayeren.github.io/">任意</a></h4>
+												<span>Sea AI</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+										<div class="member aos-init aos-animate" data-aos="fade-up">
+											<div class="speaker"
+												style="height: 200px; width: 200px;margin: 10px;">
+												<img src="assets/img/committee/libei.jpg" alt="">
+											</div>
+											<div class="member-info">
+												<h4><a
+														href="https://www.nlplab.com/teamContent?id=145&isStudent=false">李北</a>
+												</h4>
+												<span>东北大学</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+										<div class="member aos-init aos-animate" data-aos="fade-up">
+											<div class="speaker"
+												style="height: 200px; width: 200px;margin: 10px;">
+												<img src="assets/img/committee/liuqian.jpg" alt="">
+											</div>
+											<div class="member-info">
+												<h4><a
+														href="https://scholar.google.co.jp/citations?user=bcbeUo0AAAAJ">刘乾</a>
+												</h4>
+												<span>Sea AI</span>
+											</div>
+										</div>
+									</div>
+								</div>
+						
+							</div>
+						</div>
+					</section>
+
+			</section><!-- End Schedule Section -->
+
+
+
+			</section>
+
+		</main><!-- End #main -->
+
+		<!-- ======= Footer ======= -->
+		<footer id="footer">
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-lg-3 col-md-6 footer-info">
+							<img src="assets/img/logo.png" alt="TheEvenet">
+							<p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor
+								et totam porro. Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut
+								consectetur id quis. In inventore consequatur ad voluptate cupiditate debitis accusamus
+								repellat cumque.</p>
+						</div>
+
+						<div class="col-lg-3 col-md-6 footer-links">
+							<h4>Useful Links</h4>
+							<ul>
+								<li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+								<li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+								<li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+								<li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+								<li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+							</ul>
+						</div>
+
+						<div class="col-lg-3 col-md-6 footer-links">
+							<h4>Useful Links</h4>
+							<ul>
+								<li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+								<li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+								<li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+								<li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+								<li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+							</ul>
+						</div>
+
+						<div class="col-lg-3 col-md-6 footer-contact">
+							<h4>Contact Us</h4>
+							<p>
+								A108 Adam Street <br>
+								New York, NY 535022<br>
+								United States <br>
+								<strong>Phone:</strong> +1 5589 55488 55<br>
+								<strong>Email:</strong> info@example.com<br>
+							</p>
+
+							<div class="social-links">
+								<a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+								<a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+								<a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+								<a href="#" class="google-plus"><i class="bi bi-instagram"></i></a>
+								<a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="copyright">
+					&copy; Copyright <strong>TheEvent</strong>. All Rights Reserved
+				</div>
+				<div class="credits">
+					<!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+      -->
+					Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+				</div>
+			</div>
+		</footer><!-- End  Footer -->
+
+		<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+				class="bi bi-arrow-up-short"></i></a>
+
+		<!-- Vendor JS Files -->
+		<script src="assets/vendor/aos/aos.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+		<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+		<script src="assets/vendor/php-email-form/validate.js"></script>
+
+		<!-- Template Main JS File -->
+		<script src="assets/js/main.js"></script>
+
+	</body>
+
+</html>
