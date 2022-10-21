@@ -5,6 +5,7 @@
 * License: https://bootstrapmade.com/license/
 */
 
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -98,7 +99,7 @@ h6 {
 /* Sections Header
 --------------------------------*/
 .section-header {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   position: relative;
   padding-bottom: 20px;
 }
@@ -845,7 +846,7 @@ h6 {
   font-weight: 600;
   background-color: #0e1b4d;
   color: #fff;
-  padding: 10px 100px;
+  padding: 10px 40px;
 }
 
 @media (max-width: 991px) {
@@ -890,8 +891,8 @@ h6 {
 
 #schedule .schedule-item {
   border-bottom: 1px solid #cad4f6;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   transition: background-color ease-in-out 0.3s;
 }
 
@@ -911,6 +912,9 @@ h6 {
   border-radius: 50%;
   float: left;
   margin: 0 20px 0px 0;
+  border-width: 2px;
+  border-style:solid;
+  border-color: #4869df;
 }
 
 #schedule .schedule-item .speaker img {
@@ -918,6 +922,22 @@ h6 {
   transform: translateX(-50%);
   margin-left: 50%;
   transition: all ease-in-out 0.3s;
+}
+
+#schedule .schedule-item .compere {
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 20px 20px 0;
+}
+
+#schedule .schedule-item .compere img {
+  height: 100%;
+  transform: translateX(-50%);
+  transition: all ease-in-out 0.3s;
+  margin-left: 50%;
 }
 
 #schedule .schedule-item h4 {
@@ -928,19 +948,131 @@ h6 {
 
 #schedule .schedule-item h4 span {
   /* font-style: italic; */
-  color: #838bcc;
+  /*color: #838bcc;*/
+  color: #000000;
   font-weight: normal;
   font-size: 14px;
-  margin-left: 10px;
+  margin-left: 0px;
 }
 
 #schedule .schedule-item p {
   /* font-style: italic; */
   color: #152b79;
-  margin-left: 165px;
+  /*margin-left: 165px;*/
   margin-right: 20px;
-  margin-bottom: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 13px;
+  text-align:left;
 }
+
+#schedule .label {
+  color: #152b79;
+  float: right;
+  margin-right: 20px;
+  font-size: 15px;
+  font-weight: normal;
+  transform:rotate(15deg);
+}
+
+#schedule .schedule-item strong {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #152b79;
+}
+
+#schedule .schedule-item p strong {
+  font-size: 16px;
+}
+
+
+
+
+/*!**/
+/**!*/
+/*#schedule .schedule-item-main {*/
+/*  border-top: 2px solid #152b79;*/
+/*  border-bottom: 2px solid #152b79;*/
+/*  padding-top: 15px;*/
+/*  padding-bottom: 15px;*/
+/*  transition: background-color ease-in-out 0.3s;*/
+/*}*/
+
+/*#schedule .schedule-item-main:hover {*/
+/*  background-color: #fff;*/
+/*}*/
+
+/*#schedule .schedule-item-main time {*/
+/*  padding-bottom: 5px;*/
+/*  display: inline-block;*/
+/*}*/
+
+/*#schedule .schedule-item-main .speaker {*/
+/*  width: 130px;*/
+/*  height: 130px;*/
+/*  overflow: hidden;*/
+/*  border-radius: 50%;*/
+/*  float: left;*/
+/*  margin: 0 20px 0px 0;*/
+/*}*/
+
+/*#schedule .schedule-item-main .speaker img {*/
+/*  height: 100%;*/
+/*  transform: translateX(-50%);*/
+/*  margin-left: 50%;*/
+/*  transition: all ease-in-out 0.3s;*/
+/*}*/
+
+/*#schedule .schedule-item-main .compere {*/
+/*  width: 130px;*/
+/*  height: 130px;*/
+/*  overflow: hidden;*/
+/*  border-radius: 50%;*/
+/*  text-align: center;*/
+/*  margin: 0 20px 20px 0;*/
+/*}*/
+
+/*#schedule .schedule-item-main .compere img {*/
+/*  height: 100%;*/
+/*  transform: translateX(-50%);*/
+/*  transition: all ease-in-out 0.3s;*/
+/*  margin-left: 50%;*/
+/*}*/
+
+/*#schedule .schedule-item-main h4 {*/
+/*  font-size: 25px;*/
+/*  font-weight: 600;*/
+/*  margin-bottom: 10px;*/
+/*}*/
+
+/*#schedule .schedule-item-main h4 span {*/
+/*  !* font-style: italic; *!*/
+/*  !*color: #838bcc;*!*/
+/*  color: #000000;*/
+/*  font-weight: normal;*/
+/*  font-size: 14px;*/
+/*  margin-left: 0px;*/
+/*}*/
+
+/*#schedule .schedule-item-main p {*/
+/*  !* font-style: italic; *!*/
+/*  color: #152b79;*/
+/*  !*margin-left: 165px;*!*/
+/*  margin-right: 20px;*/
+/*  margin-bottom: 5px;*/
+/*  font-size: 13px;*/
+/*}*/
+
+/*#schedule .schedule-item-main p strong {*/
+/*  font-size: 16px;*/
+/*  !*margin-bottom: 10px;*!*/
+/*}*/
+
+
+/*!**/
+/**!*/
+
+
 
 /*--------------------------------------------------------------
 # Venue Section
