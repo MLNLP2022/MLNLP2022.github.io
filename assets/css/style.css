@@ -190,11 +190,13 @@ h6 {
 --------------------------------------------------------------*/
 .buy-tickets {
 	color: #fff;
-	background: #4869df;
+	background: #1393ae;
+	/* background: linear-gradient(to top right, #d6f9a7, #68e1d8); */
 	padding: 7px 22px;
 	margin: 0 0 0 15px;
 	border-radius: 50px;
-	border: 2px solid #4869df;
+	border: 2px solid #1393ae;
+	/* color: #000000; */
 	transition: all ease-in-out 0.3s;
 	font-weight: 500;
 	line-height: 1;
@@ -1027,14 +1029,85 @@ h6 {
 	font-size: 13px;
 	text-align: left;
 }
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
 
 #schedule .label {
-	color: #152b79;
-	float: right;
-	margin-right: 20px;
-	font-size: 15px;
-	font-weight: normal;
-	transform: rotate(15deg);
+	/* transform: rotate(15deg); */
+	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+		        animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+#schedule .calender-container {
+	display: flex; 
+	justify-content: center;
+	text-align: center;
 }
 
 #schedule .schedule-item strong {
@@ -1048,7 +1121,11 @@ h6 {
 }
 
 
-
+@media screen and (max-width: 500px) {
+ .span-block {
+	 display: block;
+ }
+}
 
 /*!**/
 /**!*/
@@ -1524,13 +1601,13 @@ h6 {
 	border-radius: 50px;
 	padding: 10px 40px;
 	transition: all 0.2s;
-	background-color: #4869df;
+	background-color: linear-gradient(to top right, #d6f9a7, #68e1d8);
 	border: 0;
 	color: #fff;
 }
 
 #buy-tickets .card .btn:hover {
-	background-color: #e0072f;
+	background-color: #4869df;
 }
 
 #buy-tickets #buy-ticket-modal input,
