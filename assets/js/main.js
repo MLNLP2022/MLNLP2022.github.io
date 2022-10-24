@@ -86,7 +86,9 @@
     const headerScrolled = () => {
       if (window.scrollY > 100) {
         selectHeader.classList.add('header-scrolled')
+        selectHeader.classList.remove('header-unscrolled')
       } else {
+        selectHeader.classList.add('header-unscrolled')
         selectHeader.classList.remove('header-scrolled')
       }
     }
@@ -227,5 +229,4 @@
       mirror: false
     })
   });
-
 })()
