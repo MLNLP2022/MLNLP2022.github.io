@@ -27,7 +27,86 @@
 
 		<!-- Template Main CSS File -->
 		<link href="assets/css/style.css" rel="stylesheet">
-
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			$.ajax({
+				async: false,
+				url: "./assets/data/session_6.json",
+				type: "GET",
+				dataType: "json"
+			}).done(function(data){
+				// $("#session-6").append("xxx")
+				$("#session-6").append(`
+				<div class="schedule-chair-item" align="center">
+					<h4>`+data.session_name+`</h4>
+					<strong class="item-chair">`+data.session_chair+`</strong>
+					<p class="item-body">`+data.session_desc+`
+					</p>
+					<div class="row calender-container col-10">
+							<button type="button" class="btn col-4" data-bs-toggle="dropdown"
+								style="margin-top: 15px;margin-bottom: 5px; ">
+								订阅提醒
+								 <img src="assets/img/calendar.svg" style="height: 30px;"/>
+							</button>
+						   <a class="btn col-4" href="https://app.sli.do/event/oU9wgPmnNQY8kNW9uTvMWd"
+								style="margin-top: 15px;margin-bottom: 5px; ">
+								提问嘉宾
+								 <img src="assets/img/note.svg" style="height: 30px;"/>
+							</a>
+							<!-- TODO: 修改链接 -->
+							<div class="dropdown-menu">
+								<a class="dropdown-item active" download="download"
+									href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0AURL:https://exchange.scale.com/widgets/events/scale-transformx-2022/agenda?agenda_day=62ddb208153074d3129a2111&amp;agenda_view=list%0ADTSTART:20221019T160000Z%0ADTEND:20221019T163000Z%0ASUMMARY:%5BScale%20TransformX%5D%20Opening%20Remarks%20with%20Alexandr%20Wang,%20CEO%20&amp;%20Founder,%20Scale%20AI%0ADESCRIPTION:%0ALOCATION:https://exchange.scale.com/public/events/scale-transformx-2022%0AEND:VEVENT%0AEND:VCALENDAR"
+									target="_blank" rel="noopener noreferrer"
+									style="line-height: 40px;">Apple日历</a>
+								<a class="dropdown-item" style="line-height: 40px;"
+									href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;dates=20221019T160000Z%2F20221019T163000Z&amp;location=https%3A%2F%2Fexchange.scale.com%2Fpublic%2Fevents%2Fscale-transformx-2022&amp;text=%5BScale%20TransformX%5D%20Opening%20Remarks%20with%20Alexandr%20Wang%2C%20CEO%20%26%20Founder%2C%20Scale%20AI"
+									target="_blank" rel="noopener noreferrer">Google</a>
+								<a class="dropdown-item" style="line-height: 40px;" download="download"
+									href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0AURL:https://exchange.scale.com/widgets/events/scale-transformx-2022/agenda?agenda_day=62ddb208153074d3129a2111&amp;agenda_view=list%0ADTSTART:20221019T160000Z%0ADTEND:20221019T163000Z%0ASUMMARY:%5BScale%20TransformX%5D%20Opening%20Remarks%20with%20Alexandr%20Wang,%20CEO%20&amp;%20Founder,%20Scale%20AI%0ADESCRIPTION:%0ALOCATION:https://exchange.scale.com/public/events/scale-transformx-2022%0AEND:VEVENT%0AEND:VCALENDAR"
+									target="_blank" rel="noopener noreferrer">Outlook</a>
+								<a class="dropdown-item" style="line-height: 40px;"
+									href="https://outlook.live.com/owa?rru=addevent&amp;startdt=2022-10-19T16%3A00%3A00.000Z&amp;enddt=2022-10-19T16%3A30%3A00.000Z&amp;subject=%5BScale%20TransformX%5D%20Opening%20Remarks%20with%20Alexandr%20Wang%2C%20CEO%20%26%20Founder%2C%20Scale%20AI&amp;location=https%3A%2F%2Fexchange.scale.com%2Fpublic%2Fevents%2Fscale-transformx-2022&amp;allday=false&amp;uid=1665576152119&amp;path=%2Fcalendar%2Fview%2FMonth"
+									target="_blank" rel="noopener noreferrer">Outlook Web App</a>
+								<a class="dropdown-item" style="line-height: 40px;"
+									href="https://calendar.yahoo.com?v=60&amp;view=d&amp;type=20&amp;title=%5BScale%20TransformX%5D%20Opening%20Remarks%20with%20Alexandr%20Wang%2C%20CEO%20%26%20Founder%2C%20Scale%20AI&amp;st=20221019T160000Z&amp;dur=0030&amp;in_loc=https%3A%2F%2Fexchange.scale.com%2Fpublic%2Fevents%2Fscale-transformx-2022"
+									target="_blank" rel="noopener noreferrer">Yahoo</a>
+							</div>
+						</div>
+				</div>`)
+				html_str = ""
+				for(var i=0;i<data.session_list.length;i++){
+					html_str += `
+					<div class="row schedule-item">
+						<div class="col-2">
+							<div class="row calender-container">
+								<time>`+data.session_list[i].time[0]+`</time>
+								<time class="end-time">`+data.session_list[i].time[1]+`</time>
+							</div>
+						</div>
+						<div class="col-10">
+							<div class="speaker">
+								<img src="`+data.session_list[i].speaker.img+`" alt="`+data.session_list[i].speaker.name+`">
+							</div>
+							<div class="label-box">
+								<div class="label">`+data.session_list[i].speaker.type+`</div>
+							</div>
+							<h4>`+data.session_list[i].speaker.name+` <span class="span-block">`+data.session_list[i].speaker.desc+`</span> </h4>
+							<p class="item-title"><strong>`+data.session_list[i].title+`</strong></p>
+							<p class="item-body">`+data.session_list[i].desc+`
+							</p>
+						</div>
+					</div>`
+				}
+				$("#session-6").append(html_str)
+				console.log(data);
+			}).fail(function(data,status,desc){
+				console.log(data);
+				throw new Error(status+"\n"+desc);
+			});
+			});
+		</script>
 		<!-- =======================================================
   * Template Name: TheEvent - v4.9.0
   * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
@@ -147,7 +226,7 @@
 
 						<!-- Session 6 -->
 						<div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="session-6">
-							<div class="schedule-chair-item" align="center">
+							<!-- <div class="schedule-chair-item" align="center">
 								<h4>Session 6 代码智能论坛</h4>
 								<strong class="item-chair">论坛主席：刘乾 (Sea AI Lab 研究员)</strong>
 								<p class="item-body">深度学习方法的一个令人兴奋的应用是程序代码的完成、修复和合成。这个领域在过去十年中受到了相当多的关注，最近自然语言处理与程序代码领域的充分融合为这个领域带来了巨大的希望。随着新的技术的出现，人工智能已经在代码相关的不同领域、任务和编程语言中发挥重大作用。代码领域的无限可能正在引起工业界和学术界的巨大兴趣。然而，我们刚刚开始探索大规模深度学习在代码方面的潜力，交流讨论代码智能最新的进展具有重大意义。本次代码智能论坛特别邀请了来自国内的四位优秀学者进行分享，他们分别从代码预训练、代码生成、代码摘要和程序合成等角度切入，呈现出代码智能领域最新的研究进展。
@@ -163,7 +242,6 @@
 											提问嘉宾
 											 <img src="assets/img/note.svg" style="height: 30px;"/>
 										</a>
-										<!-- TODO: 修改链接 -->
 										<div class="dropdown-menu">
 											<a class="dropdown-item active" download="download"
 												href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0AURL:https://exchange.scale.com/widgets/events/scale-transformx-2022/agenda?agenda_day=62ddb208153074d3129a2111&amp;agenda_view=list%0ADTSTART:20221019T160000Z%0ADTEND:20221019T163000Z%0ASUMMARY:%5BScale%20TransformX%5D%20Opening%20Remarks%20with%20Alexandr%20Wang,%20CEO%20&amp;%20Founder,%20Scale%20AI%0ADESCRIPTION:%0ALOCATION:https://exchange.scale.com/public/events/scale-transformx-2022%0AEND:VEVENT%0AEND:VCALENDAR"
@@ -184,8 +262,8 @@
 										</div>
 									</div>
 
-							</div>
-							<div class="row schedule-item">
+							</div> -->
+							<!-- <div class="row schedule-item">
 								<div class="col-2">
 									<div class="row calender-container">
 										<time>15:50</time>
@@ -270,7 +348,7 @@
 										PolyGen，并在条件线性表达式的合成问题上验证了其性能。实验见过表明，相比于已有的求解器，PolyGen 在求解效率和泛化能力上都有着显著的提升。</p>
 								</div>
 							</div>
-
+ -->
 						</div>
 						<!-- End Session 6 -->
 
