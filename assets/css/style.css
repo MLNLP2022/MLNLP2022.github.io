@@ -2055,6 +2055,10 @@ h6 {
         border-radius: 0 !important;
     }
 
+    #schedule .schedule-chair-item {
+        border-radius: 0 !important;
+    }
+
     #schedule .tab-pane {
         padding: 0;
     }
