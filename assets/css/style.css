@@ -2184,7 +2184,10 @@ h6 {
     border-radius: 10px;
     margin: 10px 0px;
 }
-
+#committee .schedule-item .schedule-card {
+    display: flex;
+	justify-content: center;
+}
 #committee .schedule-item > p {
     padding: 30px 30px !important;
 }
