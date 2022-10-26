@@ -906,6 +906,33 @@ h6 {
 #schedule {
     padding: 60px 0 60px 0;
 }
+@media (max-width: 991px) {
+    #schedule .tab-head{
+      /* list-style-type: none;
+      display:-webkit-box;
+      display:-webkit-flex;
+      display:-ms-flexbox;
+      display:flex;
+      -webkit-flex-wrap:nowrap;
+      -ms-flex-wrap:nowrap;
+      flex-wrap:nowrap;
+      -webkit-box-pack:justify;
+      -webkit-justify-content:space-between;
+      -ms-flex-pack:justify;
+      justify-content:space-between;
+      background:#FF4878;
+      padding:0;
+      overflow:auto; */
+	  /* background-color: aqua; */
+	  white-space: nowrap;
+	  overflow-x: auto;
+      }
+    #schedule .tab-head-item{
+      padding: 10px 3px;
+    }
+}
+
+
 
 #schedule .nav-tabs {
     text-align: center;
@@ -916,6 +943,7 @@ h6 {
 }
 
 #schedule .nav-tabs li {
+	width: 160px;
     display: inline-block;
     margin-bottom: 0;
 }
@@ -2163,6 +2191,9 @@ h6 {
     #schedule .schedule-item::after {
         display: none;
     }
+	#committee .team .member {
+		width: 260px;
+	}
 }
 
 /* for committee members */
@@ -2173,7 +2204,7 @@ h6 {
     border-radius: 5px;
     background: #fff;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-	width: 260px;
+	max-width: 260px;
 }
 
 #committee .team .member .member-img {
@@ -2221,7 +2252,7 @@ h6 {
 }
 
 #committee .team .member .member-info {
-    padding: 55px 15px;
+    padding: 55px 15px 40px 15px;
     text-align: center;
 }
 
@@ -2279,7 +2310,7 @@ h6 {
     float: left;
     border-radius: 50%;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1200px) {
 	#committee .schedule-item .speaker {
 		height: 210px;
 		width: 210px;
@@ -2290,7 +2321,7 @@ h6 {
 	}
 	#committee .schedule-item .speaker img {
 	    height: 210px;
-	    width: 210px;
+	    /* width: 210px; */
 	}
 	#committee .team .member .member-info {
 	    padding: 25px 15px;
