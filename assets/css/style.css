@@ -777,6 +777,25 @@ h6 {
     color: #fff;
 }
 
+#about ul {
+    padding:0;
+    margin:0;
+    text-align: left;
+    list-style-type: none;
+}
+
+#about li {
+    display: inline-block;
+    font-size: 16px;
+    list-style-type: none;
+    padding: 1px;
+}
+
+#about li span {
+    display: block;
+    font-size: 16px;
+}
+
 /*--------------------------------------------------------------
 # Speakers Section
 --------------------------------------------------------------*/
@@ -1026,11 +1045,14 @@ h6 {
     border-radius: 50%;
 }
 
+
 #schedule .schedule-item .speaker img {
     height: 100%;
     transform: translateX(-50%);
     margin-left: 50%;
     transition: all ease-in-out 0.3s;
+
+
 }
 
 #schedule .schedule-item .compere {
@@ -1076,7 +1098,7 @@ h6 {
 }
 
 #schedule .schedule-item .item-title {
-    background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+    background: -webkit-linear-gradient(45deg, #09009f, #00ff95 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 16px !important;
