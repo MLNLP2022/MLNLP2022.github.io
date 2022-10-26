@@ -168,10 +168,33 @@
 		<header id="header" class="d-flex align-items-center ">
 			<div class="container-fluid container-xxl d-flex align-items-center">
 
-				<div id="logo" class="me-auto">
+				<div id="logo" class="me-auto row">
 					<!-- Uncomment below if you prefer to use a text logo -->
 					<!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
 					<a href="index.html" class="scrollto"><img src="assets/img/logo-1.png" alt="" title=""></a>
+				</div>
+				<div>
+
+				</div class="nav-time-layout">
+				<div class="time-container">
+					<span class="time-card-time" id="days"></span>
+					<span class="time-card-unit">天</span>
+				</div>
+				<div class="time-card-line"><svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 3.5C2.82843 3.5 3.5 2.82843 3.5 2C3.5 1.17157 2.82843 0.5 2 0.5C1.17157 0.5 0.5 1.17157 0.5 2C0.5 2.82843 1.17157 3.5 2 3.5ZM2 11.5005C2.82843 11.5005 3.5 10.8289 3.5 10.0005C3.5 9.17206 2.82843 8.50049 2 8.50049C1.17157 8.50049 0.5 9.17206 0.5 10.0005C0.5 10.8289 1.17157 11.5005 2 11.5005Z" fill="#7B798F"></path></svg></div>
+				<div class="time-container">
+					<span class="time-card-time" id="hours"></span>
+					<span class="time-card-unit">小时</span>
+				</div>
+				<div class="time-card-line"><svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 3.5C2.82843 3.5 3.5 2.82843 3.5 2C3.5 1.17157 2.82843 0.5 2 0.5C1.17157 0.5 0.5 1.17157 0.5 2C0.5 2.82843 1.17157 3.5 2 3.5ZM2 11.5005C2.82843 11.5005 3.5 10.8289 3.5 10.0005C3.5 9.17206 2.82843 8.50049 2 8.50049C1.17157 8.50049 0.5 9.17206 0.5 10.0005C0.5 10.8289 1.17157 11.5005 2 11.5005Z" fill="#7B798F"></path></svg></div>
+				<div class="time-container" id="minutes-dis">
+					<span class="time-card-time" id="minutes"></span>
+					<span class="time-card-unit">分钟</span>
+				</div>
+				<div class="time-card-line" id="minutes-line">
+					<svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 3.5C2.82843 3.5 3.5 2.82843 3.5 2C3.5 1.17157 2.82843 0.5 2 0.5C1.17157 0.5 0.5 1.17157 0.5 2C0.5 2.82843 1.17157 3.5 2 3.5ZM2 11.5005C2.82843 11.5005 3.5 10.8289 3.5 10.0005C3.5 9.17206 2.82843 8.50049 2 8.50049C1.17157 8.50049 0.5 9.17206 0.5 10.0005C0.5 10.8289 1.17157 11.5005 2 11.5005Z" fill="#7B798F"></path></svg></div>
+				<div class="time-container" id="second-dis" style="margin-right: 20px;">
+					<span class="time-card-time" id="seconds"></span>
+					<span class="time-card-unit">秒</span>
 				</div>
 
 				<nav id="navbar" class="navbar order-last order-lg-0">
@@ -234,13 +257,6 @@
 						<div class="col-lg-3">
 							<h3>时间</h3>
 							<p>周六-周日<br>11月26日-11月27日</p>
-							<h3>倒计时</h3>
-							<ul>
-								<li><span id="days"></span>天</li>
-								<li><span id="hours"></span>小时</li>
-								<li><span id="minutes"></span>分钟</li>
-								<li><span id="seconds"></span>秒</li>
-							</ul>
 						</div>
 
 					</div>

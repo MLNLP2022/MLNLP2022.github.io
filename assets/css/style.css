@@ -1225,6 +1225,63 @@ h6 {
     font-size: 16px;
 }
 
+.nav-time-layout {
+    display: flex;
+}
+.time-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 8px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    background: rgb(53, 52, 62);
+    width: 44px;
+    height: 40px
+}
+
+.time-card-time {
+    text-align: center;
+    display: block;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.21;
+    color: rgb(255, 255, 255);
+    text-decoration: initial;
+}
+
+.time-card-line {
+    padding: 0px 10px;
+    box-sizing: border-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.time-card-unit {
+    text-align: center;
+    display: block;
+    font-family: Inter;
+    font-size: 9px;
+    font-weight: 600;
+    line-height: 1.22;
+    color: rgb(123, 121, 143);
+    text-decoration: initial;
+}
+
+@media screen and (max-width: 600px) {
+    #minutes-line, #second-dis{
+        display: none;
+    }
+    #minutes-dis {
+        margin-right: 20px;
+    }
+}
 
 @media screen and (max-width: 500px) {
     .span-block {
