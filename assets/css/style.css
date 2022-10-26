@@ -1275,10 +1275,10 @@ h6 {
 }
 
 @media screen and (max-width: 600px) {
-    #minutes-line, #second-dis{
+    #hour-line, #minutes-dis, #minutes-line, #second-dis{
         display: none;
     }
-    #minutes-dis {
+    #hour-dis {
         margin-right: 20px;
     }
 }
