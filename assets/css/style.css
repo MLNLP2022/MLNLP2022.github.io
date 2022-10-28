@@ -1064,8 +1064,8 @@ h6 {
 }
 
 #schedule .schedule-item .speaker {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     overflow: hidden;
     border-radius: 1000px;
     float: left;
@@ -2288,8 +2288,8 @@ h6 {
 }
 
 #committee .schedule-item {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     position: relative;
     border-radius: 10px;
     margin: 10px 0px;
@@ -2312,19 +2312,19 @@ h6 {
 }
 @media screen and (min-width: 1200px) {
 	#committee .schedule-item .speaker {
-		height: 210px;
-		width: 210px;
-		margin: 25px;
+		height: 160px;
+		width: 160px;
+		margin: 20px 20px 10px 20px;
 		overflow: hidden;
 		/* float: left; */
 		border-radius: 50%;
 	}
 	#committee .schedule-item .speaker img {
-	    height: 210px;
+	    height: 160px;
 	    /* width: 210px; */
 	}
 	#committee .team .member .member-info {
-	    padding: 25px 15px;
+	    padding: 25px 15px 15px 15px;
 	    text-align: center;
 	}
 }
