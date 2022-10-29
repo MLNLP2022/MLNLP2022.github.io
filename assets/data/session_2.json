@@ -6,6 +6,9 @@
     "13:00",
     "15:50"
   ],
+  "apple": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VTIMEZONE%0ATZID:Asia/Shanghai%0AX-LIC-LOCATION:Asia/Shanghai%0ABEGIN:STANDARD%0ATZOFFSETFROM:+0800%0ATZOFFSETTO:+0800%0ATZNAME:CST%0ADTSTART:19700101T000000%0AEND:STANDARD%0AEND:VTIMEZONE%0ABEGIN:VEVENT%0AURL:%0ADTSTART;TZID=Asia/Shanghai:20221126T130000%0ADTEND;TZID=Asia/Shanghai:20221126T155000%0ATZID:Asia/Shanghai%0ASUMMARY:%5BMLNLP%202022%5D%20Session%202:推荐系统论坛%0ADESCRIPTION:论坛简介：推荐系统是一种信息过滤系统，用于预测用户对物品的评分或偏好。随着电子商务规模的不断扩大，商品个数和种类快速增长，顾客需要花费大量的时间才能找到自己想买的商品。这种浏览大量无关的信息和产品过程无疑会使淹没在信息过载问题中的消费者不断流失。为了解决这些问题，个性化推荐系统应运而生，建立在海量数据挖掘基础上，帮助电子商务网站为其顾客购物提供完全个性化的决策支持和信息服务。本次推荐系统论坛邀请了四位来自工业界和学术界的优秀学者进行分享，他们分别从推荐系统的特征表达、对抗攻击与防御技术、强化学习策略、推荐效率与个性化角度切入，呈现出推荐系统领域最新的研究进展。%0ALOCATION:%0ABEGIN:VALARM%0ATRIGGER:-PT10M%0AACTION:DISPLAY%0ADESCRIPTION:Reminder%0AEND:VALARM%0AEND:VEVENT%0AEND:VCALENDAR",
+  "google": "https://calendar.google.com/calendar/r/eventedit?dates=20221126T130000%2F20221126T155000&text=%5BMLNLP%202022%5D%20Session%202:推荐系统论坛&details=论坛简介：推荐系统是一种信息过滤系统，用于预测用户对物品的评分或偏好。随着电子商务规模的不断扩大，商品个数和种类快速增长，顾客需要花费大量的时间才能找到自己想买的商品。这种浏览大量无关的信息和产品过程无疑会使淹没在信息过载问题中的消费者不断流失。为了解决这些问题，个性化推荐系统应运而生，建立在海量数据挖掘基础上，帮助电子商务网站为其顾客购物提供完全个性化的决策支持和信息服务。本次推荐系统论坛邀请了四位来自工业界和学术界的优秀学者进行分享，他们分别从推荐系统的特征表达、对抗攻击与防御技术、强化学习策略、推荐效率与个性化角度切入，呈现出推荐系统领域最新的研究进展。&ctz=Asia%2FShanghai",
+  "outlook": "https://outlook.live.com/owa?rru=addevent&startdt=2022-11-26T13:00:00&enddt=2022-11-26T15:50:00&subject=%5BMLNLP%202022%5D%20Session%202:推荐系统论坛&body=论坛简介：推荐系统是一种信息过滤系统，用于预测用户对物品的评分或偏好。随着电子商务规模的不断扩大，商品个数和种类快速增长，顾客需要花费大量的时间才能找到自己想买的商品。这种浏览大量无关的信息和产品过程无疑会使淹没在信息过载问题中的消费者不断流失。为了解决这些问题，个性化推荐系统应运而生，建立在海量数据挖掘基础上，帮助电子商务网站为其顾客购物提供完全个性化的决策支持和信息服务。本次推荐系统论坛邀请了四位来自工业界和学术界的优秀学者进行分享，他们分别从推荐系统的特征表达、对抗攻击与防御技术、强化学习策略、推荐效率与个性化角度切入，呈现出推荐系统领域最新的研究进展。&allday=false&path=%2Fcalendar%2Fview%2FMonth",
   "session_slido_url": "https://app.sli.do/event/41L5j199MDUpYTFimX2ChZ",
   "session_list": [
     {
