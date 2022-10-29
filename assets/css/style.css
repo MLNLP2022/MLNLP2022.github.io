@@ -994,8 +994,7 @@ h6 {
 }
 
 #schedule .schedule-chair-item {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 20px 32px;
     background: #fafafa;
     transition: background-color ease-in-out 0.3s;
     border: 1px solid transparent;
@@ -1010,12 +1009,43 @@ h6 {
 }
 
 #schedule .schedule-chair-item > p {
-    padding: 10px 30px !important;
     font-size: 14px;
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: left;
 }
+
+#schedule .speaker-box > .second-speaker {
+    margin: 0 10px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+    #schedule .schedule-chair-item > h4 {
+        text-align: left;
+    }
+    #schedule .schedule-chair-item > .item-chair {
+        text-align: left;
+    }
+    #schedule .speaker-box {
+        width: 80px;
+    }
+
+    #schedule .speaker-box > .second-speaker {
+        margin: 10px 20px 0 0 !important;
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+    #schedule .speaker-box {
+        width: 150px;
+    }
+
+    #schedule .speaker-box > .second-speaker {
+        margin: 10px 20px 0 0 !important;
+    }
+}
+
 
 #schedule .schedule-item:not(:last-child):before {
     display: block;
@@ -1127,14 +1157,6 @@ h6 {
 #schedule .schedule-item .item-body {
     font-size: 14px;
 }
-
-#schedule .schedule-item .item-chair {
-    background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 16px !important;
-}
-
 
 @-webkit-keyframes heartbeat {
     from {
@@ -2151,7 +2173,7 @@ h6 {
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
     #hero {
         background: url("../img/hero-bg.jpg");
         width: 100%;

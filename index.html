@@ -41,10 +41,11 @@
                     $("#session-" + index.toString()).append(`
 						<div class="schedule-chair-item" align="center">
 							<h4>` + data.session_name + `</h4>
-							<strong class="item-chair">` + data.session_chair + `</strong>
+							<div class="item-chair">
+							<strong>` + data.session_chair + `</strong></div>
 							<p class="item-body">` + `<b><svg style="width: 25px;height: 25px;display:inline;vertical-align:bottom; margin:5px" t="1666973921630" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4319" width="200" height="200"><path d="M512 512m-512 0a512 512 0 1 0 1024 0 512 512 0 1 0-1024 0Z" fill="#BDC3C7" p-id="4320"></path><path d="M574.122667 713.500444A58.026667 58.026667 0 0 1 512 773.688889c-36.181333 0-63.943111-24.007111-63.943111-60.188445" fill="#6B7082" p-id="4321"></path><path d="M512 785.066667c-43.690667 0-75.320889-30.151111-75.320889-71.566223a11.377778 11.377778 0 0 1 22.755556 0c0 28.785778 21.617778 48.810667 52.565333 48.810667a46.421333 46.421333 0 0 0 50.289778-48.810667 11.377778 11.377778 0 0 1 22.755555 0A69.176889 69.176889 0 0 1 512 785.066667z" fill="#414E5C" p-id="4322"></path><path d="M574.122667 598.357333v115.143111H448.512V598.357333" fill="#E1E1E6" p-id="4323"></path><path d="M574.122667 724.878222h-125.155556a11.377778 11.377778 0 0 1-11.377778-11.377778V598.357333a11.377778 11.377778 0 0 1 22.755556 0v103.765334h102.4v-103.765334a11.377778 11.377778 0 0 1 22.755555 0v115.143111a11.377778 11.377778 0 0 1-11.377777 11.377778z" fill="#414E5C" p-id="4324"></path><path d="M385.479111 287.857778a11.377778 11.377778 0 0 1-8.078222-3.299556l-26.168889-26.168889a11.377778 11.377778 0 0 1 16.042667-16.042666l26.168889 26.168889a11.377778 11.377778 0 0 1-8.078223 19.456zM647.168 287.857778a11.377778 11.377778 0 0 1-8.078222-19.456l26.168889-26.168889a11.377778 11.377778 0 0 1 16.042666 16.042667l-26.168889 26.168888a11.377778 11.377778 0 0 1-7.964444 3.413334zM359.196444 601.884444a11.377778 11.377778 0 0 1-8.078222-19.456l26.168889-26.168888a11.377778 11.377778 0 0 1 16.042667 16.042666l-26.168889 26.168889a11.377778 11.377778 0 0 1-7.964445 3.413333zM673.223111 601.884444a11.377778 11.377778 0 0 1-8.078222-3.299555l-26.168889-26.168889a11.377778 11.377778 0 0 1 16.042667-16.042667l26.168889 26.168889a11.377778 11.377778 0 0 1-8.078223 19.456zM312.433778 431.786667h-41.870222a11.377778 11.377778 0 0 1 0-22.755556h41.870222a11.377778 11.377778 0 1 1 0 22.755556zM753.436444 431.786667h-41.870222a11.377778 11.377778 0 0 1 0-22.755556h41.870222a11.377778 11.377778 0 0 1 0 22.755556z" fill="#464C63" p-id="4325"></path><path d="M627.256889 309.361778a157.468444 157.468444 0 0 0-223.232 222.094222 109.112889 109.112889 0 0 0 44.373333 31.175111v46.193778h125.155556v-46.193778a127.886222 127.886222 0 0 0 49.379555-31.175111 157.013333 157.013333 0 0 0 4.323556-222.094222z" fill="#FABD6B" p-id="4326"></path><path d="M574.122667 620.202667h-125.155556a11.377778 11.377778 0 0 1-11.377778-11.377778v-38.570667a125.155556 125.155556 0 0 1-40.504889-30.264889 166.001778 166.001778 0 0 1-49.265777-119.694222 168.96 168.96 0 0 1 287.516444-118.897778A161.678222 161.678222 0 0 1 682.666667 420.977778a173.283556 173.283556 0 0 1-51.2 118.784 137.329778 137.329778 0 0 1-45.511111 30.947555v38.456889a11.377778 11.377778 0 0 1-11.832889 11.036445z m-113.777778-22.755556h102.4v-34.816a11.377778 11.377778 0 0 1 7.509333-10.695111 117.191111 117.191111 0 0 0 45.511111-28.558222A150.528 150.528 0 0 0 659.911111 420.181333a139.150222 139.150222 0 0 0-40.732444-102.4A146.204444 146.204444 0 0 0 370.005333 420.977778a142.904889 142.904889 0 0 0 42.097778 102.4 98.531556 98.531556 0 0 0 40.277333 28.558222 11.377778 11.377778 0 0 1 7.509334 10.695111z" fill="#464C63" p-id="4327"></path><path d="M442.254222 505.856a11.377778 11.377778 0 0 1-8.078222-3.299556 116.053333 116.053333 0 0 1 0-164.067555 11.377778 11.377778 0 1 1 16.156444 16.042667 93.184 93.184 0 0 0 0 131.982222 11.377778 11.377778 0 0 1-8.078222 19.456z" fill="#FFFFFF" p-id="4328"></path><path d="M564.906667 691.313778h-107.292445a11.377778 11.377778 0 0 1 0-22.755556h107.406222a11.377778 11.377778 0 1 1 0 22.755556zM564.906667 655.246222h-107.292445a11.377778 11.377778 0 0 1 0-22.755555h107.406222a11.377778 11.377778 0 1 1 0 22.755555z" fill="#464C63" p-id="4329"></path></svg>论坛简介：</b>` + data.session_desc + `
 							</p>
-							<div class="row calender-container col-10">
+							<div class="row calender-container">
 									<button type="button" class="btn col-4" data-bs-toggle="dropdown"
 										style="margin-top: 15px;margin-bottom: 5px; ">
 										订阅日历
@@ -78,8 +79,8 @@
 						</div>`)
                     html_str = ""
                     for (var i = 0; i < data.session_list.length; i++) {
-						if (index == 3 && i == 0){
-							html_str += `
+                        if (index == 3 && i == 0) {
+                            html_str += `
 								<div class="row schedule-item">
 									<div class="col-2">
 										<div class="row calender-container">
@@ -88,26 +89,29 @@
 										</div>
 									</div>
 									<div class="col-10">
-										<div class="speaker">
-											<img src="assets/img/speakers/huangshujian.png" alt="黄书剑">
-										</div>
-										<div class="speaker" style="margin: 0 10px 0 0;">
-											<img src="assets/img/speakers/zhuwenhao.png" alt="朱文昊">
-										</div>
+									    <div class="label-box">
+									        <div class="label">` + data.session_list[i].type + `</div>
+									    </div>
 
-										<div class="label-box">
-											<div class="label">` + data.session_list[i].type + `</div>
-										</div>
-										<h4>黄书剑 <span class="span-block">南京大学计算机科学与技术系副教授</span> </h4>
-										
-										<h4>朱文昊 <span class="span-block">南京大学计算机科学与技术系博士生</span> </h4>
+									    <div class="speaker-box">
+									    	<div class="speaker">
+                                                <img src="assets/img/speakers/huangshujian.png" alt="黄书剑">
+                                            </div>
+                                            <div class="speaker second-speaker">
+                                                <img src="assets/img/speakers/zhuwenhao.png" alt="朱文昊">
+                                            </div>
+									    </div>
+										<div class="speaker-title-display">
+                                            <h4 class="first-title">黄书剑 <span class="span-block">南京大学计算机科学与技术系副教授</span> </h4>
+                                            <h4>朱文昊 <span class="span-block">南京大学计算机科学与技术系博士生</span> </h4>
+                                        </div>
 										<p class="item-title"><strong>` + data.session_list[i].title + `</strong></p>
 										<p class="item-body">` + data.session_list[i].desc + `
 										</p>
 									</div>
 								</div>`
-						}else{
-							html_str += `
+                        } else {
+                            html_str += `
 								<div class="row schedule-item">
 									<div class="col-2">
 										<div class="row calender-container">
@@ -128,8 +132,8 @@
 										</p>
 									</div>
 								</div>`
-						}
-                        
+                        }
+
                     }
                     $("#session-" + index.toString()).append(html_str)
                 }).fail(function (data, status, desc) {
@@ -278,9 +282,9 @@
             <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
                 <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="about_content">
                     <div class="about-item">
-                        <p> <b>MLNLP大会</b>旨在为人工智能、机器学习与自然语言处理领域内的学者提供一个学术交流的平台。
+                        <p><b>MLNLP大会</b>旨在为人工智能、机器学习与自然语言处理领域内的学者提供一个学术交流的平台。
                             本届<b>MLNLP大会</b>将于<b>2022年11月26、27日</b>线上举行，内容涵盖<b>推荐系统</b>、
-							<b>高效AI</b>、<b>机器翻译</b>以及<b>论文实践</b>和<b>圆桌对话</b>等7个论坛，期待能够促进国内外机器学习、
+                            <b>高效AI</b>、<b>机器翻译</b>以及<b>论文实践</b>和<b>圆桌对话</b>等7个论坛，期待能够促进国内外机器学习、
                             自然语言处理学术界、产业界和广大爱好者之间的交流与进步。</p>
                     </div>
                 </div>
@@ -372,7 +376,8 @@
                                     </div>
                                     <div class="member-info">
                                         <h4>
-                                            <a href="https://scholar.google.com/citations?user=a0w5c0gAAAAJ&hl=en" target="_blank">周明</a>
+                                            <a href="https://scholar.google.com/citations?user=a0w5c0gAAAAJ&hl=en"
+                                               target="_blank">周明</a>
                                         </h4>
                                         <span>澜舟科技</span>
                                     </div>
@@ -429,7 +434,8 @@
                                         <img src="assets/img/speakers/zhaosendong.png" alt="">
                                     </div>
                                     <div class="member-info">
-                                        <h4><a href="https://sites.google.com/site/zhaosendong" target="_blank">赵森栋</a></h4>
+                                        <h4><a href="https://sites.google.com/site/zhaosendong" target="_blank">赵森栋</a>
+                                        </h4>
                                         <span>哈尔滨工业大学</span>
                                     </div>
                                 </div>
@@ -440,7 +446,7 @@
                 <div class="tab-content container row justify-content-center" data-aos="fade-up"
                      data-aos-delay="200">
                     <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
-                        <h2 class="team-chair">论坛主席（按姓名拼音排序）</h2>
+                        <h2 class="team-chair">论坛主席（按姓氏首字母排序）</h2>
                         <div class="row schedule-item" style="padding-top: 0px;">
                             <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
                                 <div class="member aos-init aos-animate" data-aos="fade-up">
@@ -487,7 +493,8 @@
                                     </div>
                                     <div class="member-info">
                                         <h4><a
-                                                href="https://www.nlplab.com/teamContent?id=145&isStudent=false" target="_blank">李北</a>
+                                                href="https://www.nlplab.com/teamContent?id=145&isStudent=false"
+                                                target="_blank">李北</a>
                                         </h4>
                                         <span>东北大学</span>
                                     </div>
@@ -500,7 +507,7 @@
                                         <img src="assets/img/committee/liuhongyu.jpg" alt="">
                                     </div>
                                     <div class="member-info">
-                                        <h4><a href="" >刘洪宇</a>
+                                        <h4><a href="">刘洪宇</a>
                                         </h4>
                                         <span>哈尔滨工业大学</span>
                                     </div>
@@ -649,7 +656,8 @@
                                         <img src="assets/img/speakers/liubang.png" alt="">
                                     </div>
                                     <div class="member-info">
-                                        <h4><a href="http://www-labs.iro.umontreal.ca/~liubang/" target="_blank">刘邦</a></h4>
+                                        <h4><a href="http://www-labs.iro.umontreal.ca/~liubang/" target="_blank">刘邦</a>
+                                        </h4>
                                         <span>加拿大蒙特利尔大学</span>
                                     </div>
                                 </div>
@@ -660,7 +668,8 @@
                                         <img src="assets/img/speakers/liuhan.jpg" alt="">
                                     </div>
                                     <div class="member-info">
-                                        <h4><a href="http://faculty.dlut.edu.cn/liuhan/en/index.htm" target="_blank">刘晗</a></h4>
+                                        <h4><a href="http://faculty.dlut.edu.cn/liuhan/en/index.htm"
+                                               target="_blank">刘晗</a></h4>
                                         <span>大连理工大学</span>
                                     </div>
                                 </div>
@@ -855,10 +864,10 @@
                         MLNLP社区的愿景是促进国内外自然语言处理，机器学习学术界、产业界和广大爱好者之间的交流和进步，特别是初学者同学们的进步。</p>
                 </div>
 
-				<div class="col-lg-4 col-md-6 footer-wechat">
-					<h4 >微信公众号</h4>
-					<img src="assets/img/wechat.jpg" alt="MLNLP_wechat">
-				</div>
+                <div class="col-lg-4 col-md-6 footer-wechat">
+                    <h4>微信公众号</h4>
+                    <img src="assets/img/wechat.jpg" alt="MLNLP_wechat">
+                </div>
 
                 <div class="col-lg-4 col-md-6 footer-contact">
                     <h4>联系我们</h4>
@@ -869,8 +878,9 @@
                     <div class="social-links">
                         <a href="https://mp.weixin.qq.com/s/j9fSGI1dLy1GXY3GMPXrkg" class="wechat" target="_blank"><i
                                 class="bi bi-wechat"></i></a>
-<!--                        <a href="#" class="shipinhao"><i class="bi bi-camera-reels-fill"></i></a>-->
-                        <a href="https://github.com/MLNLP-World" class="github" target="_blank"><i class="bi bi-github"></i></a>
+                        <!--                        <a href="#" class="shipinhao"><i class="bi bi-camera-reels-fill"></i></a>-->
+                        <a href="https://github.com/MLNLP-World" class="github" target="_blank"><i
+                                class="bi bi-github"></i></a>
                         <a href="https://space.bilibili.com/168887299" class="bilibili" target="_blank"><i><img
                                 src="assets/img/bilibili-fill.svg" alt="Bootstrap" width="20" height="20"></i></a>
                     </div>
