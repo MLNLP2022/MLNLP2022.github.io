@@ -1003,6 +1003,11 @@ h6 {
     margin: 10px 0px;
 }
 
+
+#calender_menu {
+    width:60px;
+}
+
 #schedule .schedule-chair-item > p {
     padding: 10px 30px !important;
     font-size: 14px;
