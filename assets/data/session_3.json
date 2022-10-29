@@ -13,7 +13,8 @@
         "16:50"
       ],
       "speaker": {
-        "img": "assets/img/speakers/huangshujianzhuwenhao.png",
+        "img1": "assets/img/speakers/huangshujianzhuwenhao.png",
+		"img2": "assets/img/speakers/huangshujianzhuwenhao.png",
         "name": "黄书剑 朱文昊",
         "desc": "南京大学计算机科学与技术系副教授；南京大学计算机科学与技术系博士生"
       },
