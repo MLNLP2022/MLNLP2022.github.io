@@ -921,14 +921,13 @@ h6 {
 
 #schedule .nav-tabs {
     text-align: center;
-    margin: auto;
     display: block;
     border-bottom: 0;
-    margin-bottom: 30px;
+    margin: auto auto 30px;
 }
 
 #schedule .nav-tabs li {
-	width: 160px;
+	width: 13vh;
     display: inline-block;
     margin-bottom: 0;
 }
@@ -939,24 +938,24 @@ h6 {
     font-weight: 600;
     background-color: #0e1b4d;
     color: #fff;
-    padding: 10px 40px;
+    padding: 10px 15px;
 }
 
 @media (max-width: 991px) {
     #schedule .nav-tabs a {
-        padding: 8px 60px;
+        padding: 8px 15px;
     }
 }
 
 @media (max-width: 767px) {
     #schedule .nav-tabs a {
-        padding: 8px 50px;
+        padding: 8px 10px;
     }
 }
 
 @media (max-width: 480px) {
     #schedule .nav-tabs a {
-        padding: 8px 30px;
+        padding: 8px 5px;
     }
 }
 
