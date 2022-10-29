@@ -731,69 +731,54 @@ h6 {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+
 #about {
-    background: url("../img/about-bg.jpg");
-    background-size: cover;
-    overflow: hidden;
-    position: relative;
-    color: #fff;
-    padding: 60px 0 40px 0;
+    padding: 60px 0 60px 0;
 }
 
-@media (min-width: 1024px) {
-    #about {
-        background-attachment: fixed;
+@media (max-width: 991px) {
+    #about .tab-head{
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+    #about .tab-head-item{
+        padding: 10px 3px;
     }
 }
 
-#about:before {
-    content: "";
-    background: rgba(13, 20, 41, 0.8);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
+#about .about-item {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: #fafafa;
+    transition: background-color ease-in-out 0.3s;
+    border: 2px solid transparent;
+    position: relative;
+    border-radius: 10px;
+    margin: 10px 0px;
+    border-image: linear-gradient(45deg, #09009f, #00ff95);
+    border-image-slice: 10;
 }
 
-#about h2 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-#about h3 {
+#about .about-item > p {
+    padding: 10px 20px !important;
     font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-#about p {
-    font-size: 14px;
-    margin-bottom: 20px;
-    color: #fff;
-}
-
-#about ul {
-    padding:0;
-    margin:0;
+    margin-top: 5px;
+    margin-bottom: 5px;
     text-align: left;
-    list-style-type: none;
 }
 
-#about li {
-    display: inline-block;
-    font-size: 16px;
-    list-style-type: none;
-    padding: 1px;
+#about .about-item p b {
+    /*color: #112363;*/
+    background-image: linear-gradient(45deg, #09009f, #4869df);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-#about li span {
-    display: block;
-    font-size: 16px;
+#about .item-body {
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: left;
 }
 
 /*--------------------------------------------------------------
@@ -904,7 +889,7 @@ h6 {
 # Schedule Section
 --------------------------------------------------------------*/
 #schedule {
-    padding: 60px 0 60px 0;
+    padding: 20px 0 40px 0;
 }
 @media (max-width: 991px) {
     #schedule .tab-head{
@@ -1534,7 +1519,7 @@ h6 {
 # Gallery Section
 --------------------------------------------------------------*/
 #gallery {
-    padding: 60px;
+    padding: 30px 0 40px 0;
     overflow: hidden;
 }
 
@@ -1995,6 +1980,15 @@ h6 {
     margin-bottom: 30px;
 }
 
+#footer .footer-top .footer-wechat {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-wechat img {
+    height: 180px;
+    margin-bottom: 10px;
+}
+
 #footer .footer-top .footer-info h3 {
     font-size: 26px;
     margin: 0 0 20px 0;
@@ -2283,7 +2277,7 @@ h6 {
 }
 
 #committee {
-    padding: 60px 0 60px 0;
+    padding: 10px 0 10px 0;
     background: #EBF5F8;
 }
 
