@@ -42,13 +42,13 @@
         "11:00"
       ],
       "speaker": {
-        "img": "assets/img/speakers/1.jpg",
-        "name": "xxx",
-        "desc": "xxx"
+        "img": "assets/img/speakers/xiecihang.png",
+        "name": "谢慈航",
+        "desc": "加州大学圣克鲁兹分校助理教授"
       },
       "type": "专题报告",
-      "title": "xxx",
-      "desc": "xxx"
+      "title": "CNN vs. Transformer: Which One is More Robust?",
+      "desc": "这次报告将会介绍我们近期关于CNN和Transformer在鲁棒性比较上面的研究。我们会主要聚焦如下三种场景的鲁棒性：对抗样本，OOD，以及联邦学习。对于传统的CNN架构，我们发现它的鲁棒性在这三种场景下都是远不及Transformer。但是，我们发现如果对传统的CNN架构做一些细微的调整，它最终可以全方位地匹配，甚至超过，Transformer的鲁棒性。"
     },
     {
       "time": [
