@@ -66,7 +66,6 @@
 										提问嘉宾
 										 <img src="assets/img/note.svg" style="height: 30px;"/>
 									</a>
-									<!-- TODO: 修改链接 -->
 									<div class="dropdown-menu" id="calender_menu">
 										<a class="dropdown-item active" download="download"
 											href="` + data.apple + `"
@@ -130,7 +129,8 @@
 										<div class="label-box">
 											<div class="label">` + data.session_list[i].type + `</div>
 										</div>
-										<h4>` + data.session_list[i].speaker.name + ` <span class="span-block">` + data.session_list[i].speaker.desc + `</span> </h4>
+										<a style="color: rgb(5,110,155);" href="` + data.session_list[i].speaker.url + `">
+										<h4>` + data.session_list[i].speaker.name + ` <span class="span-block">` + data.session_list[i].speaker.desc + `</span> </h4></a>
 										<p class="item-title"><strong>` + data.session_list[i].title + `</strong></p>
 										<p class="item-body">` + data.session_list[i].desc + `
 										</p>
@@ -264,7 +264,7 @@
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
-        <a class="buy-tickets scrollto" href="#buy-tickets">注册</a>
+        <a class="buy-tickets scrollto" href="#footer">注册</a>
 
     </div>
 </header><!-- End Header -->

@@ -13,7 +13,8 @@
       "speaker": {
         "img": "assets/img/speakers/qiuxipeng.png",
         "name": "邱锡鹏",
-        "desc": "复旦大学计算机学院教授，国家优青获得者"
+        "desc": "复旦大学计算机学院教授，国家优青获得者",
+        "url": "https://xpqiu.github.io/"
       },
       "type": "圆桌嘉宾",
       "title": "",
@@ -24,7 +25,8 @@
       "speaker": {
         "img": "assets/img/speakers/huhan.png",
         "name": "胡瀚",
-        "desc": "微软亚洲研究院视觉计算组高级研究经理"
+        "desc": "微软亚洲研究院视觉计算组高级研究经理",
+        "url": "https://ancientmooner.github.io/"
 
       },
       "type": "圆桌嘉宾",
@@ -36,7 +38,8 @@
       "speaker": {
         "img": "assets/img/speakers/cuiyiming.png",
         "name": "崔一鸣",
-        "desc": "科大讯飞资深科学家、北京研究院副院长"
+        "desc": "科大讯飞资深科学家、北京研究院副院长",
+        "url": "https://ymcui.com/"
       },
       "type": "圆桌嘉宾",
       "title": "",
@@ -47,7 +50,8 @@
       "speaker": {
         "img": "assets/img/speakers/dongli.png",
         "name": "董力",
-        "desc": "微软亚洲研究院自然语言处理组研究员"
+        "desc": "微软亚洲研究院自然语言处理组研究员",
+        "url": "http://dong.li/"
       },
       "type": "圆桌嘉宾",
       "title": "",

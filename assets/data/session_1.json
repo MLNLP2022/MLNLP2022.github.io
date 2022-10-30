@@ -18,7 +18,8 @@
 			"speaker": {
 				"img": "assets/img/speakers/chenbeidi.png",
 				"name": "陈贝迪",
-				"desc": "FAIR / Meta AI 研究科学家"
+				"desc": "FAIR / Meta AI 研究科学家",
+				"url": ""
 			},
 			"type": "专题报告",
 			"title": "基于现有硬件的高效稀疏且准确的基础模型训练",

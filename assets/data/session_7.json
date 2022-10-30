@@ -19,7 +19,8 @@
       "speaker": {
         "img": "assets/img/speakers/tanxu.png",
         "name": "谭旭",
-        "desc": "微软亚洲研究院高级研究员"
+        "desc": "微软亚洲研究院高级研究员",
+        "url": "https://tan-xu.github.io/"
       },
       "type": "特邀报告",
       "title": "深度生成模型在语音合成中的应用",
@@ -33,7 +34,8 @@
       "speaker": {
         "img": "assets/img/speakers/lengyichong.png",
         "name": "冷燚冲",
-        "desc": "中国科学技术大学和微软亚洲研究院联合培养博士生"
+        "desc": "中国科学技术大学和微软亚洲研究院联合培养博士生",
+        "url": "https://scholar.google.com/citations?user=1jwteOQAAAAJ"
       },
       "type": "专题报告",
       "title": "基于扩散模型的两阶段空间音频合成模型",
@@ -47,7 +49,8 @@
       "speaker": {
         "img": "assets/img/speakers/liurui.png",
         "name": "刘瑞",
-        "desc": "内蒙古大学计算机学院研究员、博士生导师"
+        "desc": "内蒙古大学计算机学院研究员、博士生导师",
+        "url": "https://ttslr.github.io/"
       },
       "type": "专题报告",
       "title": "表现力语音合成可控性研究",
@@ -61,7 +64,8 @@
       "speaker": {
         "img": "assets/img/speakers/wangchengyi.png",
         "name": "王程一",
-        "desc": "南开大学与微软亚洲研究院联合培养博士生"
+        "desc": "南开大学与微软亚洲研究院联合培养博士生",
+        "url": "https://cywang97.github.io/"
       },
       "type": "专题报告",
       "title": "预训练在语音任务中的研究与应用",

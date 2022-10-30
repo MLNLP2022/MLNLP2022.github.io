@@ -19,7 +19,8 @@
       "speaker": {
         "img": "assets/img/speakers/denghuiqi.png",
         "name": "邓辉琦",
-        "desc": "上海交通大学博士后研究员"
+        "desc": "上海交通大学博士后研究员",
+        "url": "https://huiqideng1.netlify.app/"
       },
       "type": "专题报告",
       "title": "博弈交互视角下的可解释机器学习",
@@ -33,7 +34,8 @@
       "speaker": {
         "img": "assets/img/speakers/zhuziwei.png",
         "name": "竺子崴",
-        "desc": "乔治梅森大学助理教授"
+        "desc": "乔治梅森大学助理教授",
+        "url": "https://zziwei.github.io/"
       },
       "type": "专题报告",
       "title": "构建公平的推荐系统",
@@ -47,7 +49,8 @@
       "speaker": {
         "img": "assets/img/speakers/xiecihang.png",
         "name": "谢慈航",
-        "desc": "加州大学圣克鲁兹分校助理教授"
+        "desc": "加州大学圣克鲁兹分校助理教授",
+        "url": "https://ancientmooner.github.io/"
       },
       "type": "专题报告",
       "title": "CNN vs. Transformer: Which One is More Robust?",
@@ -61,7 +64,8 @@
       "speaker": {
         "img": "assets/img/speakers/dongyinpeng.png",
         "name": "董胤蓬",
-        "desc": "清华大学计算机系博士后研究员"
+        "desc": "清华大学计算机系博士后研究员",
+        "url": "https://ml.cs.tsinghua.edu.cn/~yinpeng/"
       },
       "type": "专题报告",
       "title": "ViewFool：探索深度学习的视角鲁棒性",
