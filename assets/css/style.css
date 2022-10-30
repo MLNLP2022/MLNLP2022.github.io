@@ -13,14 +13,12 @@ body {
     background: #fff;
     color: #2f3138;
     font-family: system-ui,
-    Inter,
-    -apple-system, /* Firefox supports this but not yet `system-ui` */ 'Segoe UI',
+    Georgia,
+    "Times New Roman",
+    -apple-system,
     Roboto,
     Helvetica,
-    Arial,
-    sans-serif,
-    'Apple Color Emoji',
-    'Segoe UI Emoji';
+    Arial, "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
 }
 
 a {
@@ -48,15 +46,6 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: system-ui,
-    Inter,
-    -apple-system, /* Firefox supports this but not yet `system-ui` */ 'Segoe UI',
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif,
-    'Apple Color Emoji',
-    'Segoe UI Emoji';
     font-weight: 400;
     margin: 0 0 20px 0;
     padding: 0;
@@ -176,15 +165,6 @@ h6 {
 #header #logo h1 {
     font-size: 36px;
     margin: 0;
-    font-family: system-ui,
-    Inter,
-    -apple-system, /* Firefox supports this but not yet `system-ui` */ 'Segoe UI',
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif,
-    'Apple Color Emoji',
-    'Segoe UI Emoji';
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -278,7 +258,6 @@ h6 {
     align-items: center;
     justify-content: space-between;
     color: rgba(202, 206, 221, 0.8);
-    font-family: "Raleway", sans-serif;
     font-weight: 600;
     font-size: 14px;
     white-space: nowrap;
@@ -583,7 +562,6 @@ h6 {
 
 #hero h1 {
     color: #fff;
-    font-family: "Raleway", sans-serif;
     font-size: 56px;
     font-weight: 600;
     text-transform: uppercase;
@@ -683,7 +661,6 @@ h6 {
 }
 
 #hero .about-btn {
-    font-family: "Raleway", sans-serif;
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 1px;
@@ -1285,7 +1262,6 @@ h6 {
 .time-card-time {
     text-align: center;
     display: block;
-    font-family: Inter;
     font-size: 15px;
     font-weight: 700;
     line-height: 1.21;
@@ -1305,7 +1281,6 @@ h6 {
 .time-card-unit {
     text-align: center;
     display: block;
-    font-family: Inter;
     font-size: 9px;
     font-weight: 600;
     line-height: 1.22;
@@ -2023,7 +1998,6 @@ h6 {
     margin: 0 0 20px 0;
     padding: 2px 0 2px 0;
     line-height: 1;
-    font-family: "Raleway", sans-serif;
     font-weight: 700;
     color: #fff;
 }
@@ -2037,7 +2011,6 @@ h6 {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 0;
-    font-family: "Raleway", sans-serif;
     color: #fff;
 }
 
