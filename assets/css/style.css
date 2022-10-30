@@ -751,12 +751,9 @@ h6 {
     padding-bottom: 25px;
     background: #fafafa;
     transition: background-color ease-in-out 0.3s;
-    border: 2px solid transparent;
     position: relative;
     border-radius: 10px;
-    margin: 10px 0px;
-    border-image: linear-gradient(45deg, #09009f, #00ff95);
-    border-image-slice: 10;
+    margin: 10px 0;
 }
 
 #about .about-item > p {
@@ -1579,12 +1576,15 @@ h6 {
     }
 
     #gallery .swiper-slide-active {
-        border: 5px solid #4869df;
-        padding: 4px;
+        padding: 2px;
         background: #fff;
         z-index: 1;
         transform: scale(1.15);
         margin-top: 6px;
+        border: 5px solid transparent;
+        transition: background-color ease-in-out 0.3s;
+        border-image: linear-gradient(45deg, #09009f, #00ff95);
+        border-image-slice: 10;
     }
 }
 
@@ -2187,6 +2187,14 @@ h6 {
 
     #schedule .schedule-chair-item {
         border-radius: 0 !important;
+    }
+
+    #about .about-item {
+        border-radius: 0 !important;
+    }
+
+    #about_content {
+        padding: 0 !important;
     }
 
     #schedule .tab-pane {
