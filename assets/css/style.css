@@ -948,7 +948,7 @@ h6 {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     #schedule .nav-tabs a {
         padding: 8px 10px;
     }
@@ -1728,7 +1728,7 @@ h6 {
     font-size: 14px;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     #subscribe input {
         min-width: 400px;
     }
