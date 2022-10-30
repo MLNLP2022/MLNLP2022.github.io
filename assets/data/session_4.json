@@ -13,7 +13,8 @@
       "speaker": {
         "img": "assets/img/speakers/laiyuxuan.png",
         "name": "来雨轩",
-        "desc": "国家开放大学讲师，北京大学王选计算机研究所博士"
+        "desc": "国家开放大学讲师，北京大学王选计算机研究所博士",
+		"url": "https://scholar.google.com.hk/citations?user=oKbXK7EAAAAJ&hl=zh-CN"
       },
       "type": "论文写作实践",
       "title": "Paper-Writing-Tips：论文写作投稿必备技巧",
@@ -24,7 +25,8 @@
       "speaker": {
         "img": "assets/img/committee/libei.jpg",
         "name": "李北",
-        "desc": "东北大学自然语言处理实验室博士生"
+        "desc": "东北大学自然语言处理实验室博士生",
+		"url": "https://scholar.google.com/citations?user=wzbJ5EIAAAAJ&hl=en"
 
       },
       "type": "论文画图实践",
@@ -36,7 +38,8 @@
       "speaker": {
         "img": "assets/img/speakers/liguodun.png",
         "name": "李国趸",
-        "desc": "浙江大学计算机学院硕士生"
+        "desc": "浙江大学计算机学院硕士生",
+		"url": "#"
 
       },
       "type": "论文检索实践",

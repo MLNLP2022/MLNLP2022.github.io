@@ -19,7 +19,7 @@
 				"img": "assets/img/speakers/chenbeidi.png",
 				"name": "陈贝迪",
 				"desc": "FAIR / Meta AI 研究科学家",
-				"url": ""
+				"url": "https://scholar.google.com/citations?user=jCNJhFcAAAAJ"
 			},
 			"type": "专题报告",
 			"title": "基于现有硬件的高效稀疏且准确的基础模型训练",
@@ -33,7 +33,8 @@
 			"speaker": {
 				"img": "assets/img/speakers/zhoupeipei.png",
 				"name": "周佩佩",
-				"desc": "匹兹堡大学助理教授"
+				"desc": "匹兹堡大学助理教授",
+				"url": "https://peipeizhou-eecs.github.io/"
 			},
 			"type": "专题报告",
 			"title": "深度学习加速器芯片的自动调优",
@@ -47,7 +48,8 @@
 			"speaker": {
 				"img": "assets/img/speakers/louqian.png",
 				"name": "娄钱",
-				"desc": "中佛罗里达大学助理教授"
+				"desc": "中佛罗里达大学助理教授",
+				"url": "https://qlou.org/"
 			},
 			"type": "专题报告",
 			"title": "探索高效的、隐私保护的深度学习",
@@ -61,7 +63,8 @@
 			"speaker": {
 				"img": "assets/img/speakers/liuxiaodong.png",
 				"name": "刘晓东",
-				"desc": "微软研究院深度学习研究组首席研究员"
+				"desc": "微软研究院深度学习研究组首席研究员",
+				"url": "https://sites.google.com/view/buptxiaodong/home"
 			},
 			"type": "专题报告",
 			"title": "迈向高效的人工智能模型",
@@ -75,7 +78,8 @@
 			"speaker": {
 				"img": "assets/img/speakers/yaohuaxiu.png",
 				"name": "姚骅修",
-				"desc": "斯坦福大学计算机科学博士后学者"
+				"desc": "斯坦福大学计算机科学博士后学者",
+				"url": "https://huaxiuyao.mystrikingly.com/"
 			},
 			"type": "专题报告",
 			"title": "使用可操作性机器学习解决分布转移问题",
