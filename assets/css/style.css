@@ -2061,7 +2061,7 @@ h6 {
         border-radius: 0 !important;
     }
 
-    .agenda-opening {
+    .agenda-layout {
         border-radius: 0 !important;
     }
 
@@ -2283,7 +2283,7 @@ h6 {
     margin-right: 0;
 }
 
-.agenda-opening {
+.agenda-layout {
     background: #fafafa;
     border: 1px solid transparent;
     position: relative;
@@ -2294,14 +2294,11 @@ h6 {
 .agenda-item img {
     height: 150px;
     width: 150px;
-    margin: 10px;
+    margin-bottom: 10px;
     overflow: hidden;
     border-radius: 50%;
 }
 
-.agenda-item {
-    padding: 0;
-}
 
 .agenda-item p {
     color: #000000;
