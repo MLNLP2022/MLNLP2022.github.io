@@ -34,7 +34,7 @@
       "speaker": {
         "img": "assets/img/speakers/chenbei.jpg",
         "name": "陈蓓",
-        "desc": "微软亚洲研究院主管研究员，清华大学计算机系博士",
+        "desc": "微软亚洲研究院主管研究员",
         "url": "https://ml.cs.tsinghua.edu.cn/~beichen/"
       },
       "type": "专题报告",
@@ -49,7 +49,7 @@
       "speaker": {
         "img": "assets/img/speakers/wangyanlin.jpg",
         "name": "王焱林",
-        "desc": "中山大学助理教授，硕士生导师",
+        "desc": "中山大学助理教授",
         "url": "https://yanlin.info/"
       },
       "type": "专题报告",

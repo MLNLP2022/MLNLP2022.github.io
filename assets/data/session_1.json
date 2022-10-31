@@ -18,7 +18,7 @@
 			"speaker": {
 				"img": "assets/img/speakers/chenbeidi.png",
 				"name": "陈贝迪",
-				"desc": "FAIR / Meta AI 研究科学家，卡内基梅隆大学助理教授",
+				"desc": "FAIR 研究科学家、卡内基梅隆大学助理教授",
 				"url": "https://cs.stanford.edu/people/beidic/"
 			},
 			"type": "专题报告",
@@ -33,7 +33,7 @@
 			"speaker": {
 				"img": "assets/img/speakers/zhoupeipei.png",
 				"name": "周佩佩",
-				"desc": "匹兹堡大学助理教授、博士生导师",
+				"desc": "匹兹堡大学助理教授",
 				"url": "https://peipeizhou-eecs.github.io/"
 			},
 			"type": "专题报告",

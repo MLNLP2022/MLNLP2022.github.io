@@ -19,7 +19,7 @@
       "speaker": {
         "img": "assets/img/speakers/tangruiming.png",
         "name": "唐睿明",
-        "desc": "华为诺亚方舟实验室资深研究员、推荐与搜索实验室主任",
+        "desc": "华为诺亚方舟实验室推荐与搜索实验室主任",
 		"url": "https://scholar.google.com/citations?user=fUtHww0AAAAJ"
       },
       "type": "特邀报告",
@@ -49,7 +49,7 @@
       "speaker": {
         "img": "assets/img/speakers/caiqingpeng.png",
         "name": "蔡庆芃",
-        "desc": "清华大学博士，快手高级算法专家",
+        "desc": "快手高级算法专家",
 		"url": "https://qingpengcai.github.io/"
       },
       "type": "专题报告",
