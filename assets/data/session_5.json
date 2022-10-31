@@ -9,7 +9,7 @@
   "session_slido_url": "https://app.sli.do/event/eneNciRpE76tst1jfzZHV3",
   "session_list": [
     {
-      "time": ["20:10",""],
+      "time": ["开始 20:10",""],
       "speaker": {
         "img": "assets/img/speakers/qiuxipeng.png",
         "name": "邱锡鹏",
@@ -46,7 +46,7 @@
       "desc": "高级工程师，IEEE高级会员、CCF高级会员，中关村科学城科技创新英才。毕业于哈尔滨工业大学计算机科学与技术专业，获工学硕士学位。主要从事预训练模型、机器阅读理解等自然语言处理相关领域的研究工作。曾多次获得机器翻译、阅读理解、自然语言理解评测冠军，其中包括国际权威机器阅读理解评测SQuAD、权威自然语言理解评测GLUE等。所研制的中文阅读理解及预训练开源项目被业界广泛应用，在开源平台GitHub上累计获得1万次以上star。在国际顶级会议和期刊上发表学术论文40余篇，包括ACL、EMNLP、AAAI、TASLP、iScience等，其中ESI高被引论文、前沿趋势论文1篇，获国际语义评测SemEval-2022最佳论文提名奖，申请发明专利30余项、获授权专利6项。担任EMNLP 2021、NLPCC 2021、AACL 2022领域主席，NLP和AI领域顶级国际会议和期刊审稿人等学术职务。"
     },
     {
-      "time": ["","21:30"],
+      "time": ["","结束 21:30"],
       "speaker": {
         "img": "assets/img/speakers/dongli.png",
         "name": "董力",
