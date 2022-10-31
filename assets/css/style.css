@@ -1005,9 +1005,6 @@ h6 {
     height: 100%;
     transform: translateX(-50%);
     margin-left: 50%;
-    transition: all ease-in-out 0.3s;
-
-
 }
 
 #schedule .schedule-item .compere {
