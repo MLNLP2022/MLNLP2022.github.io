@@ -927,9 +927,6 @@ h6 {
 }
 
 @media screen and (max-width: 768px) {
-    #schedule .schedule-chair-item > h4 {
-        text-align: left;
-    }
     #schedule .schedule-chair-item > .item-chair {
         text-align: left;
     }
@@ -1030,8 +1027,6 @@ h6 {
 }
 
 #schedule .schedule-item h4 span {
-    /* font-style: italic; */
-    /*color: #838bcc;*/
     color: #000000;
     font-weight: normal;
     font-size: 14px;
@@ -2066,6 +2061,10 @@ h6 {
         border-radius: 0 !important;
     }
 
+    .agenda-opening {
+        border-radius: 0 !important;
+    }
+
     #schedule .schedule-chair-item {
         border-radius: 0 !important;
     }
@@ -2165,7 +2164,7 @@ h6 {
 }
 
 #committee .team .member .member-info {
-    padding: 55px 15px 40px 15px;
+    padding: 40px 15px 20px 15px;
     text-align: center;
 }
 
@@ -2271,7 +2270,49 @@ h6 {
     color: #9195a2;
 }
 
+#schedule .agenda-title {
+    text-align: center;
+    margin: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #9195a2;
+}
+
 #committee .team > .row {
     margin-left: 0;
     margin-right: 0;
 }
+
+.agenda-opening {
+    background: #fafafa;
+    border: 1px solid transparent;
+    position: relative;
+    border-radius: 10px;
+    padding: 20px 32px !important;
+}
+
+.agenda-item img {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.agenda-item {
+    padding: 0;
+}
+
+.agenda-item p {
+    color: #000000;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}
+
+.agenda-item h4 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
