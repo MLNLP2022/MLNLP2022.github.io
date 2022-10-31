@@ -1,6 +1,6 @@
 # MLNLP2022 Conference
 
-Welcome to MLNLP 2022 conference, please see [mlnlp2022.com](mlnlp2022.github.io) for more details.
+Welcome to MLNLP 2022 conference, please see [mlnlp2022.com](http://www.mlnlp2022.com) for more details.
 
 - Nov. 26 - Nov.27, 2022
 - Online conference
