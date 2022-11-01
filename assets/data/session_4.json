@@ -30,7 +30,7 @@
 
       },
       "type": "论文画图实践",
-      "title": "Paper Picture Writing Code：零基础入门高质量论文绘图 <a href=\"https://github.com/MLNLP-World/Paper-Picture-Writing-Code\" class=\"github\" target=\"_blank\" style=\"line-height: 1;margin-left: 10px;\"><i class=\"bi bi-github\"></i></a>",
+      "title": "Paper-Picture-Writing-Code：零基础入门高质量论文绘图 <a href=\"https://github.com/MLNLP-World/Paper-Picture-Writing-Code\" class=\"github\" target=\"_blank\" style=\"line-height: 1;margin-left: 10px;\"><i class=\"bi bi-github\"></i></a>",
       "desc": "对于很多科研新手来说论文图片的绘制常常成为论文写作中一大难题，图像失真、图示不合规范等问题会导致论文质量的降低，LaTex和Python绘制的矢量图具有不会出现失真、便于实时修改和维护等优点，为了帮助科研工作者提高论文写作画图的质量和效率、学会更好地利用代码画图，本次报告将基于MLNLP社区开源项目Paper-Picture-Writing-Code，带来全面的高质量论文绘图教程。"
     },
     {
