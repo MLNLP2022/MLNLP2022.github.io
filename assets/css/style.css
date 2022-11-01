@@ -836,6 +836,7 @@ h6 {
 #schedule .nav-tabs li {
 	width: 8vw;
 	min-width: 100px;
+    max-width: 150px;
     display: inline-block;
     margin-bottom: 0;
 }
