@@ -179,26 +179,26 @@
             }
             //end
 
-            const countDown = new Date(birthday).getTime(),
-                x = setInterval(function () {
-
-                    const now = new Date().getTime(),
-                        distance = countDown - now;
-
-                    document.getElementById("days").innerText = Math.floor(distance / (day)),
-                        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-                        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-                        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-
-                    //do something later when date is reached
-                    if (distance < 0) {
-                        document.getElementById("headline").innerText = "It's my birthday!";
-                        document.getElementById("countdown").style.display = "none";
-                        document.getElementById("content").style.display = "block";
-                        clearInterval(x);
-                    }
-                    //seconds
-                }, 0)
+            // const countDown = new Date(birthday).getTime(),
+            //     x = setInterval(function () {
+            //
+            //         const now = new Date().getTime(),
+            //             distance = countDown - now;
+            //
+            //         document.getElementById("days").innerText = Math.floor(distance / (day)),
+            //             document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+            //             document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+            //             document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+            //
+            //         //do something later when date is reached
+            //         if (distance < 0) {
+            //             document.getElementById("headline").innerText = "It's my birthday!";
+            //             document.getElementById("countdown").style.display = "none";
+            //             document.getElementById("content").style.display = "block";
+            //             clearInterval(x);
+            //         }
+            //         //seconds
+            //     }, 0)
         }());
     </script>
     <!-- =======================================================
@@ -220,11 +220,8 @@
             <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
             <a href="index.html" class="scrollto"><img src="assets/img/logo-1.png" alt="" title=""></a>
         </div>
-        <div>
-
-        </div class="nav-time-layout">
         <div class="time-container">
-            <span class="time-card-time" id="days"></span>
+            <span class="time-card-time" id="days">0</span>
             <span class="time-card-unit">天</span>
         </div>
         <div class="time-card-line">
@@ -235,7 +232,7 @@
             </svg>
         </div>
         <div class="time-container" id="hour-dis">
-            <span class="time-card-time" id="hours"></span>
+            <span class="time-card-time" id="hours">0</span>
             <span class="time-card-unit">小时</span>
         </div>
         <div class="time-card-line" id="hour-line">
@@ -246,7 +243,7 @@
             </svg>
         </div>
         <div class="time-container" id="minutes-dis">
-            <span class="time-card-time" id="minutes"></span>
+            <span class="time-card-time" id="minutes">0</span>
             <span class="time-card-unit">分钟</span>
         </div>
         <div class="time-card-line" id="minutes-line">
@@ -257,7 +254,7 @@
             </svg>
         </div>
         <div class="time-container" id="second-dis" style="margin-right: 20px;">
-            <span class="time-card-time" id="seconds"></span>
+            <span class="time-card-time" id="seconds">0</span>
             <span class="time-card-unit">秒</span>
         </div>
 
