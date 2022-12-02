@@ -20,10 +20,12 @@
         "img": "assets/img/speakers/tangruiming.png",
         "name": "唐睿明",
         "desc": "华为诺亚方舟实验室推荐与搜索实验室主任",
-		"url": "https://scholar.google.com/citations?user=fUtHww0AAAAJ"
+        "url": "https://scholar.google.com/citations?user=fUtHww0AAAAJ"
       },
       "type": "特邀报告",
       "title": "推荐系统中特征表达的学习与训练",
+      "slides": "",
+      "recoding": "<a href=\"https://www.bilibili.com/video/BV1W84y1k7ke?p=1\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-camera-reels-fill\"></i></a>",
       "desc": "推荐是当今互联网的核心技术之一，直接影响产品收入和用户体验。为提升推荐模型效果，多个学术界和工业界团队围绕组合特征挖掘和用户行为建模提出了多种推荐模型。随着推荐模型创新带来精度提升越来越接近上限，而特征表达的参数量占据推荐模型相当显著的一部分，有不少工作已经开始聚焦于特征表达的学习与训练。本报告将结合华为诺亚方舟实验室关于推荐与搜索方向的一些研究和落地的工作，介绍我们利用图神经网络、AutoML、预训练、分布式训练等技术提升特征表达的精度和学习效率。"
     },
     {
@@ -35,10 +37,12 @@
         "img": "assets/img/speakers/fanwenqi.png",
         "name": "范文琦",
         "desc": "香港理工大学电子计算学系研究助理教授",
-		"url": "https://wenqifan03.github.io/"
+        "url": "https://wenqifan03.github.io/"
       },
       "type": "专题报告",
       "title": "推荐系统的对抗攻击策略与防御技术",
+      "slides": "",
+      "recoding": "<a href=\"https://www.bilibili.com/video/BV1W84y1k7ke?p=2\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-camera-reels-fill\"></i></a>",
       "desc": "最近的研究表明，基于深度神经网络的推荐系统很容易受到恶意攻击，攻击者可以将精心设计的虚假用户画像（即虚假用户访问过的一系列商品）注入目标推荐系统，以实现某些恶意目标，例如推广某些目标商品或降低某些目标商品的曝光量。考虑到安全和隐私问题，攻击者不能轻易访问目标推荐系统的模型架构、模型参数和训练数据，因此在实际应用场景中，实现黑盒环境下的恶意攻击更具有现实意义。然而，有限的资源（例如有限的访问次数）使得生成高质量的虚假用户画像是相当有挑战性的。此外，构建鲁棒的推荐系统模型为用户提供高质量的推荐至关重要。为此，本报告将介绍推荐系统的对抗攻击策略与防御技术。"
     },
     {
@@ -50,12 +54,14 @@
         "img": "assets/img/speakers/caiqingpeng.png",
         "name": "蔡庆芃",
         "desc": "快手高级算法专家",
-		"url": "https://qingpengcai.github.io/"
+        "url": "https://qingpengcai.github.io/"
       },
       "type": "专题报告",
       "title": "强化学习在快手短视频推荐场景的应用与创新",
+      "slides": "",
+      "recoding": "<a href=\"https://www.bilibili.com/video/BV1W84y1k7ke?p=3\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-camera-reels-fill\"></i></a>",
       "desc": "近年来强化学习在游戏、围棋、机器人等领域取得了重要突破，但是在工业级推荐系统中由于以下挑战还未得到广泛应用：系统不稳定性、动作空间过大、多目标以及延迟奖励问题。本次报告将从以下几个方面介绍强化学习在快手短视频推荐系统的应用和创新工作：1)基于强化学习的工业级在线自动寻参系统，取得了一定的时长收益；2)应对短视频推荐系统的多目标挑战，我们提出两阶段约束强化学习算法，相比目前STOA的强化学习算法在多目标平衡方面取得了更好地效果；3)以App活跃度为目标进行优化，我们提出多Actor多Critic强化学习算法，置信提升用户App打开次数与DAU指标。"
-	},
+    },
     {
       "time": [
         "15:00",
@@ -65,10 +71,12 @@
         "img": "assets/img/speakers/machen.png",
         "name": "马辰",
         "desc": "香港城市大学计算机系助理教授",
-		"url": "https://allenjack.github.io/"
+        "url": "https://allenjack.github.io/"
       },
       "type": "专题报告",
       "title": "高效个性化推荐模型研究",
+      "slides": "",
+      "recoding": "<a href=\"https://www.bilibili.com/video/BV1W84y1k7ke?p=4\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-camera-reels-fill\"></i></a>",
       "desc": "随着互联网服务和移动设备的发展，互联网用户可以很容易地访问大量的在线产品和服务。为了减少信息过载，满足用户的不同需求，个性化的推荐系统应运而生。本次讲座中，我们将探究高效个性化推荐模型的最新研究进展。首先，我们将介绍如何有效利用辅助信息，如物品的时间顺序，以更细粒度的方式对用户的兴趣进行建模。其次，我们将介绍如何建立有效的模型来更好地学习用户与物品的交互。具体来说，我们将介绍如何应用自适应/个性化的超参数学习机制。最后，我们将讨论推荐技术的更广阔的发展前景。"
     }
   ]

@@ -18,12 +18,14 @@
       ],
       "speaker": {
         "img1": "assets/img/speakers/huangshujianzhuwenhao.png",
-		"img2": "assets/img/speakers/huangshujianzhuwenhao.png",
+        "img2": "assets/img/speakers/huangshujianzhuwenhao.png",
         "name": "黄书剑 朱文昊",
         "desc": "南京大学计算机科学与技术系副教授；南京大学计算机科学与技术系博士生"
       },
       "type": "特邀报告",
       "title": "K近邻机器翻译",
+      "slides": "<a href=\"assets/slides/session_3/huangshujian_zhuwenhao.pdf\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-file-earmark-slides-fill\"></i></a>",
+      "recoding": "<a href=\"https://www.bilibili.com/video/BV1UM411z7DE?p=1\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-camera-reels-fill\"></i></a>",
       "desc": "如何记忆和利用翻译知识是机器翻译研究中的一个本质问题。在深度学习时代，翻译知识已经不再被显式地以符号化的方式保存，而是被隐式地包含在神经网络的参数中。但是，即使是大规模神经网络也很难记住训练数据中的全部知识，特别是低频知识。K近邻机器翻译（KNN-MT）是一种基于检索的机器翻译框架，为解决以上问题提供了新角度。KNN-MT通过引入一个额外的翻译知识库辅助神经机器翻译模型，在建模低频现象，快速自适应等方面展示出了极大的潜力。本次报告将介绍KNN-MT的基本架构以及最新研究进展，包括如何在不同场景下有效利用符号知识，如何提升翻译系统整体解码速度，以及对神经符号翻译系统的可解释性探索。"
     },
     {
@@ -35,10 +37,12 @@
         "img": "assets/img/speakers/zhouhao.png",
         "name": "周浩",
         "desc": "清华大学智能产业研究院副研究员",
-		"url": "http://zhouh.github.io/"
+        "url": "http://zhouh.github.io/"
       },
       "type": "专题报告",
       "title": "基于无向环Transformer的非自回归机器翻译",
+      "slides": "<a href=\"assets/slides/session_3/zhouhao.pdf\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-file-earmark-slides-fill\"></i></a>",
+      "recoding": "<a href=\"https://www.bilibili.com/video/BV1UM411z7DE?p=2\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-camera-reels-fill\"></i></a>",
       "desc": "非自回归Transformer（NATs）模型可以一次性并行地生成所有目标序列，大大降低了解码延迟。然而，这种独立的预测使NAT无法捕捉到序列中不同位置之间的依赖关系，进而导致比较严重的“多峰”问题。在本文中，我们提出了基于有向无环图的Transformer模型（DA-Transformer），它通过构建有向无环图（DAG）来表示目标序列不同位置的隐藏状态，其中DAG的每个路径对应于一种翻译候选。整个DAG可以同时捕捉多种翻译，并以非自回归的方式促进快速预测。在WMT基准的原始训练数据上的实验表明，DA-Transformer的性能大大超过了以前的NAT范式，取得了近3个 BLEU值的提升，这是第一个在不依赖知识蒸馏的情况下取得与自回归范式Transformer相比，具备竞争力结果的NAT模型。"
     },
     {
@@ -50,10 +54,12 @@
         "img": "assets/img/speakers/wangshuo.png",
         "name": "王硕",
         "desc": "清华大学计算机系博士生",
-		"url": "https://shuowang.cool/"
+        "url": "https://shuowang.cool/"
       },
       "type": "专题报告",
       "title": "支持词汇约束的神经机器翻译",
+      "slides": "",
+      "recoding": "<a href=\"https://www.bilibili.com/video/BV1UM411z7DE?p=3\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-camera-reels-fill\"></i></a>",
       "desc": "神经机器翻译（NMT）近年来取得了快速的发展。但是在一些容错率较低的翻译任务中，如药品说明书的翻译，重要会议交流的翻译等，NMT模型因其不可控性仍然难以广泛应用。针对此问题，很多研究者提出发展支持词汇约束的NMT技术。但是，由于NMT模型端到端的特性，我们很难直接将人类预先定义的词汇翻译规则加入到NMT模型的翻译过程中。为此，我们分别从模型层面和训练算法层面出发，针对NMT模型的特点提出了引入词汇约束的方法。实验证明，我们的方法可以从不同角度让NMT模型更好地处理词汇约束，帮助NMT模型在更多场景中发挥作用。"
     },
     {
@@ -65,10 +71,12 @@
         "img": "assets/img/speakers/liuxuebo.png",
         "name": "刘学博",
         "desc": "哈尔滨工业大学（深圳）助理教授",
-		"url": "https://sunbowliu.github.io/"
+        "url": "https://sunbowliu.github.io/"
       },
       "type": "专题报告",
       "title": "神经机器翻译的一致性表示学习",
+      "slides": "<a href=\"assets/slides/session_3/liuxuebo.pdf\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-file-earmark-slides-fill\"></i></a>",
+      "recoding": "<a href=\"https://www.bilibili.com/video/BV1UM411z7DE?p=4\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-camera-reels-fill\"></i></a>",
       "desc": "如何从有限的标注数据中高效学习有用特征是深度学习的核心问题，以R-Drop为代表的一致性学习方法为该问题的解决提供了新的思路，显著推动了近期机器翻译领域的发展。在本次报告中，我们将首先介绍一致性学习方法的背景与其在机器翻译中的应用情况，然后将结合机器翻译任务中模型与数据的特性，详细介绍我们近期发表在EMNLP2022上的两项工作：1）面向低资源机器翻译的跨模型一致性表示学习；2）面向中文机器翻译的样本改造一致性表示学习。最后，我们将进一步探索一致性表示学习在机器翻译中的潜在研究应用点，如多模态机器翻译等。"
     }
   ]

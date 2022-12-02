@@ -24,6 +24,8 @@
       },
       "type": "特邀报告",
       "title": "人工智能赋能代码智能",
+      "slides": "<a href=\"assets/slides/session_6/duannan.pdf\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-file-earmark-slides-fill\"></i></a>",
+      "recoding": "<a href=\"https://www.bilibili.com/video/BV1Be4y1g7Ey?p=1\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-camera-reels-fill\"></i></a>",
       "desc": "代码智能研究旨在构建针对编程语言的人工智能模型，使其能够在软件开发不同阶段赋能软件开发人员，提高其生产力和创造力。本报告将介绍微软亚洲研究院在代码智能方向的最新研究，包括代码预训练模型、代码检索、代码生成、代码审查和代码智能基准数据集等。报告的结尾还将和大家讨论代码智能目前存在的主要挑战，以及未来可能的研究方向。"
     },
     {
@@ -39,6 +41,8 @@
       },
       "type": "专题报告",
       "title": "模型可以自我验证吗？探究基于测试用例生成的代码生成方法",
+      "slides": "<a href=\"assets/slides/session_6/chenbei.pdf\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-file-earmark-slides-fill\"></i></a>",
+      "recoding": "<a href=\"https://www.bilibili.com/video/BV1Be4y1g7Ey?p=2\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-camera-reels-fill\"></i></a>",
       "desc": "得益于预训练语言模型如Codex等的发展，我们能够为给定的编程问题自动生成代码解决方案。一般来说，预训练语言模型会生成多个不同的解决方案，而从中选择出最为准确的解决方案仍然是一个很大的挑战（例如，pass@100通常比pass@1高很多）。验证一个代码解决方案准确性最简单的方法是使用一组测试用例来执行它。然而，人工构建这样的测试用例是费时费力的。本报告旨在探索这样一个问题：预训练语言模型可以进行自我验证吗？我们提出了一个有趣的方法CodeT，它能够利用相同的预训练语言模型为代码解决方案生成多个测试用例，从而降低人工成本。CodeT将生成的多个代码解决方案在测试用例上执行，并进行双向执行一致性判断，从而挑选出最为准确的代码解决方案。我们使用5个不同大小和能力的预训练语言模型，在4个有名的代码生成数据集上做了实验。实验结果证实CodeT能够极大地提升代码生成的性能，其中CodeT将HumanEval数据集的pass@1分数提升至65.8%，比现有最高分数还要高20+%。"
     },
     {
@@ -54,6 +58,8 @@
       },
       "type": "专题报告",
       "title": "基于深度哈希和代码分类的代码搜索加速研究",
+      "slides": "<a href=\"assets/slides/session_6/wangyilin.pdf\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-file-earmark-slides-fill\"></i></a>",
+      "recoding": "<a href=\"https://www.bilibili.com/video/BV1Be4y1g7Ey?p=3\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-camera-reels-fill\"></i></a>",
       "desc": "代码搜索是从大型代码库中搜索出符合开发者需求的可重用代码片段，通常查询语句用自然语言来表达，一个好的代码搜索系统可以大幅提升开发者的工作效率。越来越多的研究者关注并利用深度学习解决代码搜索问题。然而，以前的方法侧重于检索的准确性，但缺乏对检索过程的效率的关注。本报告旨在探讨如何加速代码搜索过程。我们提出了一种通过深度散列和代码分类来加速代码搜索的方法CoSHC，旨在在不牺牲太多准确性的情况下执行高效的代码搜索。为了评估CoSHC的有效性，我们将其应用于五个代码搜索模型。大量的实验结果表明，与以往的代码搜索基线相比，CoSHC可以节省超过90% 的检索时间，同时保留至少 99% 的检索准确率。"
     },
     {
@@ -69,6 +75,8 @@
       },
       "type": "专题报告",
       "title": "可泛化的基于合一化的程序合成",
+      "slides": "<a href=\"assets/slides/session_6/jiruyi.pdf\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-file-earmark-slides-fill\"></i></a>",
+      "recoding": "<a href=\"https://www.bilibili.com/video/BV1Be4y1g7Ey?p=4\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-camera-reels-fill\"></i></a>",
       "desc": "程序合成器的泛化能力指的是合成器从少量的输入输出样例中生成正确程序的能力，它是影响程序合成器在实践中的性能的一个重要因素。然而，目前程序合成领域对于合成器泛化能力的理解还十分有限。一方面，只有极少数的合成器提供了泛化能力方面的理论保证。另一方面，已有的程序合成器在一些重要问题上（例如条件线性表达式的合成）的泛化能力都不令人满意。在这一项工作中，我们基于机器学习领域的奥卡姆学习理论提出了奥卡姆合成器的的概念，并在概率近似正确性的框架中，给出了奥卡姆合成器在泛化能力上的理论保障。同时，我们在基于合一化的程序合成框架的基础上，设计了一个高效的奥卡姆合成器 PolyGen，并在条件线性表达式的合成问题上验证了其性能。实验见过表明，相比于已有的求解器，PolyGen 在求解效率和泛化能力上都有着显著的提升。"
     }
   ]

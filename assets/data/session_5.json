@@ -1,15 +1,21 @@
 {
-  "session_name": "特色论坛: 预训练圆桌对话 <span style=\"white-space: pre;word-break: break-word;\"> (11月26日 20:10-21:30) </span>",
+  "session_name": "特色论坛: 预训练圆桌对话 <span style=\"white-space: pre;word-break: break-word;\"> (11月26日 20:10-21:30) </span> <a href=\"https://www.bilibili.com/video/BV1de4y1M79j/\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-camera-reels-fill\"></i></a>",
   "session_chair": "论坛主席：韩旭 (清华大学博士后) &nbsp;&nbsp;&nbsp;&nbsp; 刘乾 (Sea AI Lab 研究科学家)",
   "session_desc": "近些年预训练模型席卷了深度学习领域，逐渐成为深度学习中最热的方向之一。本论坛特别邀请到了在预训练模型上有丰富实践经验的嘉宾们来围绕预训练模型进行圆桌对话。本次圆桌的嘉宾背景丰富多样，既有来自工业界的嘉宾，也有来自学术界的嘉宾；既有在英文预训练上做到世界一流的嘉宾，也有持续构建中文预训练模型社区的嘉宾。本次圆桌的主题不仅囊括计算机视觉、自然语言处理、多模态处理等各个方向最前沿的技术，也将探讨嘉宾们在预训练模型研究中的研究心得与对未来的思考。",
-  "session_time": ["20:10","21:30"],
+  "session_time": [
+    "20:10",
+    "21:30"
+  ],
   "apple": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VTIMEZONE%0ATZID:Asia/Shanghai%0AX-LIC-LOCATION:Asia/Shanghai%0ABEGIN:STANDARD%0ATZOFFSETFROM:+0800%0ATZOFFSETTO:+0800%0ATZNAME:CST%0ADTSTART:19700101T000000%0AEND:STANDARD%0AEND:VTIMEZONE%0ABEGIN:VEVENT%0AURL:%0ADTSTART;TZID=Asia/Shanghai:20221126T201000%0ADTEND;TZID=Asia/Shanghai:20221126T213000%0ATZID:Asia/Shanghai%0ASUMMARY:%5BMLNLP%202022%5D%20特色论坛:%20预训练圆桌对话%0ADESCRIPTION:注册链接：https://event.baai.ac.cn/event/581 论坛简介：近些年预训练模型席卷了深度学习领域，逐渐成为深度学习中最热的方向之一。本论坛特别邀请到了在预训练模型上有丰富实践经验的嘉宾们来围绕预训练模型进行圆桌对话。本次圆桌的嘉宾背景丰富多样，既有来自工业界的嘉宾，也有来自学术界的嘉宾；既有在英文预训练上做到世界一流的嘉宾，也有持续构建中文预训练模型社区的嘉宾。本次圆桌的主题不仅囊括计算机视觉、自然语言处理、多模态处理等各个方向最前沿的技术，也将探讨嘉宾们在预训练模型研究中的研究心得与对未来的思考。%0ALOCATION:%0ABEGIN:VALARM%0ATRIGGER:-PT10M%0AACTION:DISPLAY%0ADESCRIPTION:Reminder%0AEND:VALARM%0ALOCATION:http://www.mlnlp2022.com/%0AEND:VEVENT%0AEND:VCALENDAR",
   "google": "https://calendar.google.com/calendar/r/eventedit?dates=20221126T201000%2F20221126T213000&text=%5BMLNLP%202022%5D%20特色论坛:%20预训练圆桌对话&details=注册链接：https://event.baai.ac.cn/event/581 论坛简介：近些年预训练模型席卷了深度学习领域，逐渐成为深度学习中最热的方向之一。本论坛特别邀请到了在预训练模型上有丰富实践经验的嘉宾们来围绕预训练模型进行圆桌对话。本次圆桌的嘉宾背景丰富多样，既有来自工业界的嘉宾，也有来自学术界的嘉宾；既有在英文预训练上做到世界一流的嘉宾，也有持续构建中文预训练模型社区的嘉宾。本次圆桌的主题不仅囊括计算机视觉、自然语言处理、多模态处理等各个方向最前沿的技术，也将探讨嘉宾们在预训练模型研究中的研究心得与对未来的思考。&ctz=Asia%2FShanghai&location=http://www.mlnlp2022.com/",
   "outlook": "https://outlook.live.com/owa?rru=addevent&startdt=2022-11-26T20:10:00&enddt=2022-11-26T21:30:00&subject=%5BMLNLP%202022%5D%20特色论坛:%20预训练圆桌对话&body=注册链接：https://event.baai.ac.cn/event/581 论坛简介：近些年预训练模型席卷了深度学习领域，逐渐成为深度学习中最热的方向之一。本论坛特别邀请到了在预训练模型上有丰富实践经验的嘉宾们来围绕预训练模型进行圆桌对话。本次圆桌的嘉宾背景丰富多样，既有来自工业界的嘉宾，也有来自学术界的嘉宾；既有在英文预训练上做到世界一流的嘉宾，也有持续构建中文预训练模型社区的嘉宾。本次圆桌的主题不仅囊括计算机视觉、自然语言处理、多模态处理等各个方向最前沿的技术，也将探讨嘉宾们在预训练模型研究中的研究心得与对未来的思考。&allday=false&path=%2Fcalendar%2Fview%2FMonth&location=http://www.mlnlp2022.com/",
   "session_slido_url": "https://app.sli.do/event/eneNciRpE76tst1jfzZHV3",
   "session_list": [
     {
-      "time": ["开始 20:10",""],
+      "time": [
+        "开始 20:10",
+        ""
+      ],
       "speaker": {
         "img": "assets/img/speakers/qiuxipeng.png",
         "name": "邱锡鹏",
@@ -18,23 +24,32 @@
       },
       "type": "圆桌嘉宾",
       "title": "",
+      "slides": "",
+      "recoding": "",
       "desc": "主要从事自然语言处理、深度学习等方向的研究，发表CCF A/B类论文70余篇，获得ACL 2017杰出论文奖（CCF A类）、CCL 2019最佳论文奖、《中国科学：技术科学》2021年度高影响力论文奖，有5篇论文入选PaperDigest发布的ACL/EMNLP等会议的最有影响力论文（每届会议中引用率最高的15篇论文），主持开发了开源框架FudanNLP和FastNLP，已被国内外数百家单位使用。2015年入选首届中国科协青年人才托举工程，2018年获钱伟长中文信息处理科学技术奖青年创新奖，2020获第四届上海高校青年教师教学竞赛优等奖，2021年获首届上海市计算机学会教学成果奖一等奖（第一完成人）。"
     },
     {
-      "time": ["",""],
+      "time": [
+        "",
+        ""
+      ],
       "speaker": {
         "img": "assets/img/speakers/huhan.png",
         "name": "胡瀚",
         "desc": "微软亚洲研究院视觉计算组高级研究经理",
         "url": "https://ancientmooner.github.io/"
-
       },
       "type": "圆桌嘉宾",
       "title": "",
+      "slides": "",
+      "recoding": "",
       "desc": "主要研究方向为视觉神经网络设计、自监督表征学习，以及视觉-语言联合表征学习等。论文Swin Transformer获ICCV 2021最佳论文奖，并被学界和业界广泛使用。曾获中国人工智能学会优秀博士学位论文。担任CVPR 2021和CVPR 2022领域主席。"
     },
     {
-      "time": ["",""],
+      "time": [
+        "",
+        ""
+      ],
       "speaker": {
         "img": "assets/img/speakers/cuiyiming.png",
         "name": "崔一鸣",
@@ -43,10 +58,15 @@
       },
       "type": "圆桌嘉宾",
       "title": "",
+      "slides": "",
+      "recoding": "",
       "desc": "高级工程师，IEEE高级会员、CCF高级会员，中关村科学城科技创新英才。毕业于哈尔滨工业大学计算机科学与技术专业，获工学硕士学位。主要从事预训练模型、机器阅读理解等自然语言处理相关领域的研究工作。曾多次获得机器翻译、阅读理解、自然语言理解评测冠军，其中包括国际权威机器阅读理解评测SQuAD、权威自然语言理解评测GLUE等。所研制的中文阅读理解及预训练开源项目被业界广泛应用，在开源平台GitHub上累计获得1万次以上star。在国际顶级会议和期刊上发表学术论文40余篇，包括ACL、EMNLP、AAAI、TASLP、iScience等，其中ESI高被引论文、前沿趋势论文1篇，获国际语义评测SemEval-2022最佳论文提名奖，申请发明专利30余项、获授权专利6项。担任EMNLP 2021、NLPCC 2021、AACL 2022领域主席，NLP和AI领域顶级国际会议和期刊审稿人等学术职务。"
     },
     {
-      "time": ["","结束 21:30"],
+      "time": [
+        "",
+        "结束 21:30"
+      ],
       "speaker": {
         "img": "assets/img/speakers/dongli.png",
         "name": "董力",
@@ -55,6 +75,8 @@
       },
       "type": "圆桌嘉宾",
       "title": "",
+      "slides": "",
+      "recoding": "",
       "desc": "博士毕业于爱丁堡大学。现主要从事大规模预训练的相关研究工作。曾获得AAAI-2021 Best Paper Runner Up、2019 AAAI/ACM SIGAI Doctoral Dissertation Award Runner Up、ACL-2018 Best Paper Honourable Mention，并多次担任ACL、EMNLP、NAACL等会议领域主席。"
     }
   ]

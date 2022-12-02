@@ -24,6 +24,8 @@
       },
       "type": "专题报告",
       "title": "博弈交互视角下的可解释机器学习",
+      "slides": "",
+      "recoding": "<a href=\"https://www.bilibili.com/video/BV1614y1n7y9?p=1\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-camera-reels-fill\"></i></a>",
       "desc": "具有强大表征能力的深度神经网络，往往被视为缺乏可解释性的黑盒系统。人们既无法理解神经网络的内在决策逻辑，也无法解释其在特征表达方面的优势与缺陷。本次报告将从博弈交互出发，证明神经网络的输出可以精准解构为输入变量间的交互效用。进一步地，本报告将基于该交互效用，揭示并理论证明前人14种神经网络归因解释算法的公共本质，发现并理论解释神经网络在特征表达方面的公共瓶颈。"
     },
     {
@@ -39,6 +41,8 @@
       },
       "type": "专题报告",
       "title": "构建公平的推荐系统",
+      "slides": "",
+      "recoding": "<a href=\"https://www.bilibili.com/video/BV1614y1n7y9?p=2\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-camera-reels-fill\"></i></a>",
       "desc": "在信息爆炸的当下，推荐系统已经成为网络信息世界里不可或缺的一环。很大程度上，推荐算法拥有了控制我们用户在网络世界里行为与获取信息的能力。算法可以决定我们能看到什么视频内容，听什么音乐，也能决定我们能看到什么新闻与社交媒体，甚至能决定我们能找什么样的工作，交什么样的朋友。当如此强大的影响力不受监督与约束时，推荐算法中微量的偏见与不公平都将会给用户，被推荐方，乃至整个社会带来巨大的危害。因此本次报告将介绍常见的推荐系统公平性的问题，包括针对被推荐方的公平与针对用户的公平问题。相应的，我们也会介绍多种不同的提升推荐系统公平性的方法。"
     },
     {
@@ -54,6 +58,8 @@
       },
       "type": "专题报告",
       "title": "CNN vs. Transformer: Which One is More Robust?",
+      "slides": "",
+      "recoding": "<a href=\"https://www.bilibili.com/video/BV1614y1n7y9?p=3\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-camera-reels-fill\"></i></a>",
       "desc": "这次报告将会介绍我们近期关于CNN和Transformer在鲁棒性比较上面的研究。我们会主要聚焦如下三种场景的鲁棒性：对抗样本，OOD，以及联邦学习。对于传统的CNN架构，我们发现它的鲁棒性在这三种场景下都是远不及Transformer。但是，我们发现如果对传统的CNN架构做一些细微的调整，它最终可以全方位地匹配，甚至超过，Transformer的鲁棒性。"
     },
     {
@@ -69,6 +75,8 @@
       },
       "type": "专题报告",
       "title": "ViewFool：探索深度学习的视角鲁棒性",
+      "slides": "",
+      "recoding": "<a href=\"https://www.bilibili.com/video/BV1614y1n7y9?p=4\" target=\"_blank\" style=\"line-height: 1;\" ><i class=\"bi bi-camera-reels-fill\"></i></a>",
       "desc": "尽管深度学习在众多计算机视觉任务中取得了优异性能，但是这些模型在数据分布发生偏移时鲁棒性与泛化能力较差，阻碍其在真实世界中的规模化应用。例如，自动驾驶系统难以处理多种多样的边界场景（corner cases），可能导致交通事故。已有工作从多个方面研究深度学习在数据分布偏移时的泛化能力，但主要聚焦于图像的二维变换（如平移、旋转、噪声、模糊等），而没有考虑在三维空间中更加自然的视角变化。针对这一问题，本次报告将介绍ViewFool方法，用于寻找三维空间中误导视觉感知模型的对抗视角。ViewFool通过神经辐射场（NeRF）建模真实世界中的物体，并在熵正则化的约束下学习对抗视角的分布，有助于处理真实相机姿态的波动，并减轻真实物体与其神经渲染之间的差异。基于ViewFool，进一步构建了视角OOD数据集ImageNet-V，可以对图像分类器的视角鲁棒性进行基准测试。"
     }
   ]

@@ -29,8 +29,8 @@
 
     <!-- Google Fonts -->
     <link
-            href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
-            rel="stylesheet">
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+        rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -116,7 +116,7 @@
 												<h4>朱文昊 <span class="span-block">南京大学计算机科学与技术系博士生</span> </h4>
 											</a>
                                         </div>
-										<p class="item-title"><strong>` + data.session_list[i].title + `</strong></p>
+										<p class="item-title"><strong>` + data.session_list[i].title + `</strong>&nbsp;&nbsp;` + data.session_list[i].slides + `&nbsp;&nbsp;` + data.session_list[i].recoding + `</p>
 										<p class="item-body">` + data.session_list[i].desc + `
 										</p>
 									</div>
@@ -139,7 +139,7 @@
 										</div>
 										<a href="` + data.session_list[i].speaker.url + `" target="_blank">
 										<h4>` + data.session_list[i].speaker.name + ` <span class="span-block">` + data.session_list[i].speaker.desc + `</span> </h4></a>
-										<p class="item-title"><strong>` + data.session_list[i].title + `</strong></p>
+										<p class="item-title"><strong>` + data.session_list[i].title + `</strong>&nbsp;&nbsp;` + data.session_list[i].slides + `&nbsp;&nbsp;` + data.session_list[i].recoding + `</p>
 										<p class="item-body">` + data.session_list[i].desc + `
 										</p>
 									</div>
@@ -211,768 +211,771 @@
 
 <body>
 
-<!-- ======= Header ======= -->
-<header id="header" class="d-flex align-items-center ">
-    <div class="container-fluid container-xxl d-flex align-items-center">
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center ">
+        <div class="container-fluid container-xxl d-flex align-items-center">
 
-        <div id="logo" class="me-auto row">
-            <!-- Uncomment below if you prefer to use a text logo -->
-            <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
-            <a href="index.html" class="scrollto"><img src="assets/img/logo-1.png" alt="" title=""></a>
-        </div>
-        <div class="time-container">
-            <span class="time-card-time" id="days">0</span>
-            <span class="time-card-unit">天</span>
-        </div>
-        <div class="time-card-line">
-            <svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M2 3.5C2.82843 3.5 3.5 2.82843 3.5 2C3.5 1.17157 2.82843 0.5 2 0.5C1.17157 0.5 0.5 1.17157 0.5 2C0.5 2.82843 1.17157 3.5 2 3.5ZM2 11.5005C2.82843 11.5005 3.5 10.8289 3.5 10.0005C3.5 9.17206 2.82843 8.50049 2 8.50049C1.17157 8.50049 0.5 9.17206 0.5 10.0005C0.5 10.8289 1.17157 11.5005 2 11.5005Z"
-                      fill="#7B798F"></path>
-            </svg>
-        </div>
-        <div class="time-container" id="hour-dis">
-            <span class="time-card-time" id="hours">0</span>
-            <span class="time-card-unit">小时</span>
-        </div>
-        <div class="time-card-line" id="hour-line">
-            <svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M2 3.5C2.82843 3.5 3.5 2.82843 3.5 2C3.5 1.17157 2.82843 0.5 2 0.5C1.17157 0.5 0.5 1.17157 0.5 2C0.5 2.82843 1.17157 3.5 2 3.5ZM2 11.5005C2.82843 11.5005 3.5 10.8289 3.5 10.0005C3.5 9.17206 2.82843 8.50049 2 8.50049C1.17157 8.50049 0.5 9.17206 0.5 10.0005C0.5 10.8289 1.17157 11.5005 2 11.5005Z"
-                      fill="#7B798F"></path>
-            </svg>
-        </div>
-        <div class="time-container" id="minutes-dis">
-            <span class="time-card-time" id="minutes">0</span>
-            <span class="time-card-unit">分钟</span>
-        </div>
-        <div class="time-card-line" id="minutes-line">
-            <svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M2 3.5C2.82843 3.5 3.5 2.82843 3.5 2C3.5 1.17157 2.82843 0.5 2 0.5C1.17157 0.5 0.5 1.17157 0.5 2C0.5 2.82843 1.17157 3.5 2 3.5ZM2 11.5005C2.82843 11.5005 3.5 10.8289 3.5 10.0005C3.5 9.17206 2.82843 8.50049 2 8.50049C1.17157 8.50049 0.5 9.17206 0.5 10.0005C0.5 10.8289 1.17157 11.5005 2 11.5005Z"
-                      fill="#7B798F"></path>
-            </svg>
-        </div>
-        <div class="time-container" id="second-dis" style="margin-right: 20px;">
-            <span class="time-card-time" id="seconds">0</span>
-            <span class="time-card-unit">秒</span>
-        </div>
-
-        <nav id="navbar" class="navbar order-last order-lg-0">
-            <ul>
-                <li><a class="nav-link scrollto active" href="#hero">主页</a></li>
-                <li><a class="nav-link scrollto" href="#about">会议简介</a></li>
-                <li><a class="nav-link scrollto" href="#schedule">会议日程</a></li>
-                <li><a class="nav-link scrollto" href="#committee">会议主办方</a></li>
-                <li><a class="nav-link scrollto" href="#gallery">往期活动</a></li>
-                <li><a class="nav-link scrollto" href="#footer">联系我们</a></li>
-            </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar -->
-        <a class="buy-tickets scrollto"
-           href="https://hub-api.baai.ac.cn/auth/login?redirect_url=https://event.baai.ac.cn/event/581" target="_blank">注册</a>
-
-    </div>
-</header><!-- End Header -->
-
-<!-- ======= Hero Section ======= -->
-<section id="hero">
-    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
-    </div>
-</section><!-- End Hero Section -->
-
-<main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="section-with-bg">
-        <div class="container" data-aos="fade-up">
-            <div class="section-header">
-                <h2>会议简介</h2>
+            <div id="logo" class="me-auto row">
+                <!-- Uncomment below if you prefer to use a text logo -->
+                <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+                <a href="index.html" class="scrollto"><img src="assets/img/logo-1.png" alt="" title=""></a>
             </div>
-            <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
-                <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="about_content">
-                    <div class="about-item">
-                        <p><b>MLNLP 大会</b>旨在为人工智能、机器学习与自然语言处理领域内的学者提供一个学术交流的平台。
-                            本届<b> MLNLP 大会</b>将于<b> 2022 年 11 月 26、27 日</b>线上举行，内容涵盖<b>高效 AI</b>、
-                            <b>推荐系统</b>、<b>机器翻译</b>等 6 个主题论坛，<b>论文实践</b>、<b>圆桌对话</b>等 2 个特色论坛，期待能够促进国内外机器学习、
-                            自然语言处理学术界、产业界和广大爱好者之间的交流与进步。</p>
-                    </div>
-                </div>
+            <div class="time-container">
+                <span class="time-card-time" id="days">0</span>
+                <span class="time-card-unit">天</span>
             </div>
-        </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Schedule Section ======= -->
-    <section id="schedule" class="section-with-bg">
-        <div class="container" data-aos="fade-up">
-            <div class="section-header">
-                <h2>会议日程</h2>
-                <!--						<p>Here is our event schedule</p>-->
+            <div class="time-card-line">
+                <svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2 3.5C2.82843 3.5 3.5 2.82843 3.5 2C3.5 1.17157 2.82843 0.5 2 0.5C1.17157 0.5 0.5 1.17157 0.5 2C0.5 2.82843 1.17157 3.5 2 3.5ZM2 11.5005C2.82843 11.5005 3.5 10.8289 3.5 10.0005C3.5 9.17206 2.82843 8.50049 2 8.50049C1.17157 8.50049 0.5 9.17206 0.5 10.0005C0.5 10.8289 1.17157 11.5005 2 11.5005Z"
+                        fill="#7B798F"></path>
+                </svg>
             </div>
-            <h2 class="agenda-title">开幕式</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-9 tab-pane agenda-opening" align="center">
-                    <div class="agenda-layout">
-                        <h4>主席致辞 <span style="white-space: pre;word-break: break-word;"> (11月26日 08:50-09:00) </span></h4>
-                        <div class="row agenda-item">
-                            <a class="speaker" href="https://scholar.google.com/citations?user=a0w5c0gAAAAJ&hl=en"
-                               target="_blank">
-                                <img loading="lazy" src="assets/img/speakers/zhouming.jpg" alt="周明">
-                            </a>
-                            <a href="https://scholar.google.com/citations?user=a0w5c0gAAAAJ&hl=en" target="_blank">
-                                <h4>周明</h4>
-                                <p class="span-block">MLNLP2022大会主席、澜舟科技创始人、CCF副理事长</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="time-container" id="hour-dis">
+                <span class="time-card-time" id="hours">0</span>
+                <span class="time-card-unit">小时</span>
             </div>
-            <h2 class="agenda-title">专题论坛</h2>
-            <ul class="nav nav-tabs tab-head" role="tablist" data-aos="fade-up" data-aos-delay="100">
-                <li class="nav-item tab-head-item">
-                    <a class="nav-link active" href="#session-1" role="tab" data-bs-toggle="tab">高效 AI</a>
-                </li>
-                <li class="nav-item tab-head-item">
-                    <a class="nav-link" href="#session-2" role="tab" data-bs-toggle="tab">推荐系统</a>
-                </li>
-                <li class="nav-item tab-head-item">
-                    <a class="nav-link" href="#session-3" role="tab" data-bs-toggle="tab">机器翻译</a>
-                </li>
-                <li class="nav-item tab-head-item">
-                    <a class="nav-link" href="#session-4" role="tab" data-bs-toggle="tab">论文实践</a>
-                </li>
-                <li class="nav-item tab-head-item">
-                    <a class="nav-link" href="#session-5" role="tab" data-bs-toggle="tab">圆桌对话</a>
-                </li>
-                <li class="nav-item tab-head-item">
-                    <a class="nav-link" href="#session-6" role="tab" data-bs-toggle="tab">可信 AI</a>
-                </li>
-                <li class="nav-item tab-head-item">
-                    <a class="nav-link" href="#session-7" role="tab" data-bs-toggle="tab">语音处理</a>
-                </li>
-                <li class="nav-item tab-head-item">
-                    <a class="nav-link" href="#session-8" role="tab" data-bs-toggle="tab">代码智能</a>
-                </li>
-            </ul>
-
-
-            <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
-
-                <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="session-1"></div>
-                <div role="tabpanel" class="col-lg-9 tab-pane fade show" id="session-2"></div>
-                <div role="tabpanel" class="col-lg-9 tab-pane fade show" id="session-3"></div>
-                <div role="tabpanel" class="col-lg-9 tab-pane fade show" id="session-4"></div>
-                <div role="tabpanel" class="col-lg-9 tab-pane fade show" id="session-5"></div>
-                <div role="tabpanel" class="col-lg-9 tab-pane fade show" id="session-6"></div>
-                <div role="tabpanel" class="col-lg-9 tab-pane fade show" id="session-7"></div>
-                <div role="tabpanel" class="col-lg-9 tab-pane fade show" id="session-8"></div>
-
+            <div class="time-card-line" id="hour-line">
+                <svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2 3.5C2.82843 3.5 3.5 2.82843 3.5 2C3.5 1.17157 2.82843 0.5 2 0.5C1.17157 0.5 0.5 1.17157 0.5 2C0.5 2.82843 1.17157 3.5 2 3.5ZM2 11.5005C2.82843 11.5005 3.5 10.8289 3.5 10.0005C3.5 9.17206 2.82843 8.50049 2 8.50049C1.17157 8.50049 0.5 9.17206 0.5 10.0005C0.5 10.8289 1.17157 11.5005 2 11.5005Z"
+                        fill="#7B798F"></path>
+                </svg>
             </div>
-            <h2 class="agenda-title">闭幕式</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-9 tab-pane agenda-opening" align="center">
-                    <div class="agenda-layout">
-                        <h4>大会总结 <span style="white-space: pre;word-break: break-word;"> (11月27日 18:20-18:30) </span></h4>
-                        <div class="row agenda-item">
-                            <a class="speaker" href="http://siviltaram.github.io" target="_blank">
-                                <img loading="lazy" src="assets/img/speakers/liuqian.png" alt="刘乾">
-                            </a>
-                            <a href="http://siviltaram.github.io" target="_blank">
-                                <h4>刘乾</h4>
-                                <p class="span-block">MLNLP2022程序委员会主席、Sea AI Lab研究科学家</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="time-container" id="minutes-dis">
+                <span class="time-card-time" id="minutes">0</span>
+                <span class="time-card-unit">分钟</span>
+            </div>
+            <div class="time-card-line" id="minutes-line">
+                <svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2 3.5C2.82843 3.5 3.5 2.82843 3.5 2C3.5 1.17157 2.82843 0.5 2 0.5C1.17157 0.5 0.5 1.17157 0.5 2C0.5 2.82843 1.17157 3.5 2 3.5ZM2 11.5005C2.82843 11.5005 3.5 10.8289 3.5 10.0005C3.5 9.17206 2.82843 8.50049 2 8.50049C1.17157 8.50049 0.5 9.17206 0.5 10.0005C0.5 10.8289 1.17157 11.5005 2 11.5005Z"
+                        fill="#7B798F"></path>
+                </svg>
+            </div>
+            <div class="time-container" id="second-dis" style="margin-right: 20px;">
+                <span class="time-card-time" id="seconds">0</span>
+                <span class="time-card-unit">秒</span>
             </div>
 
-        </div>
-
-    </section><!-- End Schedule Section -->
-
-    <!-- ======= Venue Section ======= -->
-    <section id="committee">
-        <div class="container">
-            <div class="section-header">
-                <h2>会议主办方</h2>
-            </div>
-
-            <section class="section team">
-                <div class="tab-content container row justify-content-center" data-aos="fade-up"
-                     data-aos-delay="200">
-                    <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
-                        <h2 class="team-chair">大会主席</h2>
-                        <div class="row schedule-item">
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="https://yanshuicheng.ai/">
-                                    <div class="speaker">
-                                        <img loading="lazy" src="assets/img/speakers/yanshuicheng.png" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>颜水成</h4>
-                                        <span>Sea AI Lab</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="https://scholar.google.com/citations?user=a0w5c0gAAAAJ&hl=en">
-                                    <div class="speaker">
-                                        <img loading="lazy" src="assets/img/speakers/zhouming.jpg" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>周明</h4>
-                                        <span>澜舟科技</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="http://faculty.hitsz.edu.cn/xuruifeng">
-                                    <div class="speaker">
-                                        <img loading="lazy" src="assets/img/speakers/xuruifeng.png" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>徐睿峰</h4>
-                                        <span>哈尔滨工业大学（深圳）</span>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-content container row justify-content-center" data-aos="fade-up"
-                     data-aos-delay="200">
-                    <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
-                        <h2 class="team-chair">程序委员会主席</h2>
-                        <div class="row schedule-item">
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="https://siviltaram.github.io">
-                                    <div class="speaker">
-                                        <img loading="lazy" src="assets/img/committee/liuqian.jpg" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>刘乾</h4>
-                                        <span>Sea AI Lab</span>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="http://www.personal.psu.edu/dux19/">
-                                    <div class="speaker">
-                                        <img loading="lazy" src="assets/img/committee/xudongkuan.jpg" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>胥栋宽</h4>
-                                        <span>北卡州立大学</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="http://homepage.hit.edu.cn/stanzhao">
-                                    <div class="speaker"
-                                    >
-                                        <img loading="lazy" src="assets/img/speakers/zhaosendong.png" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>赵森栋</h4>
-                                        <span>哈尔滨工业大学</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-content container row justify-content-center" data-aos="fade-up"
-                     data-aos-delay="200">
-                    <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
-                        <h2 class="team-chair">论坛主席(姓氏首字母排序) </h2>
-                        <div class="row schedule-item" style="padding-top: 0px;">
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="https://chenchongthu.github.io">
-                                    <div class="speaker"
-                                    >
-                                        <img loading="lazy" src="assets/img/committee/chenchong.png" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>陈冲</h4>
-                                        <span>华为云</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up" href="https://mengnandu.com/">
-                                    <div class="speaker"
-                                    >
-                                        <img loading="lazy" src="assets/img/committee/dumengnan.jpg" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>杜梦楠</h4>
-                                        <span>美国德州农工大学</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="https://thucsthanxu13.github.io">
-                                    <div class="speaker"
-                                    >
-                                        <img loading="lazy" src="assets/img/committee/hanxu.jpg" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>韩旭</h4>
-                                        <span>清华大学</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="https://www.nlplab.com/teamContent?id=145&isStudent=false">
-                                    <div class="speaker">
-                                        <img loading="lazy" src="assets/img/committee/libei.jpg" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>李北</h4>
-                                        <span>东北大学</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up" href="">
-                                    <div class="speaker">
-                                        <img loading="lazy" src="assets/img/committee/liuhongyu.jpg" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>刘洪宇</h4>
-                                        <span>哈尔滨工业大学</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="https://siviltaram.github.io">
-                                    <div class="speaker"
-                                    >
-                                        <img loading="lazy" src="assets/img/committee/liuqian.jpg" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>刘乾</h4>
-                                        <span>Sea AI Lab</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="https://edwardzh.github.io">
-                                    <div class="speaker">
-                                        <img loading="lazy" src="assets/img/committee/liuzhenghao.jpg" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>刘正皓</h4>
-                                        <span>东北大学</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="https://p2333.github.io/">
-                                    <div class="speaker"
-                                    >
-                                        <img loading="lazy" src="assets/img/committee/pangtianyu.jpg" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>庞天宇</h4>
-                                        <span>Sea AI Lab</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="https://rayeren.github.io/">
-                                    <div class="speaker"
-                                    >
-                                        <img loading="lazy" src="assets/img/committee/renyi.png" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>任意</h4>
-                                        <span>Sea AI Lab</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="https://yaqingwang.github.io/">
-                                    <div class="speaker"
-                                    >
-                                        <img loading="lazy" src="assets/img/committee/wangyaqing.jpg"
-                                             alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>王亚庆</h4>
-                                        <span>谷歌研究院</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="http://www.personal.psu.edu/dux19/">
-                                    <div class="speaker"
-                                    >
-                                        <img loading="lazy" src="assets/img/committee/xudongkuan.jpg"
-                                             alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>胥栋宽</h4>
-                                        <span>北卡州立大学</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="https://xiaoyuanyi.github.io">
-                                    <div class="speaker"
-                                    >
-                                        <img loading="lazy" src="assets/img/committee/yixiaoyuan.png" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>矣晓沅</h4>
-                                        <span>微软亚洲研究院</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="https://zhaoxyai.github.io/">
-                                    <div class="speaker"
-                                    >
-                                        <img loading="lazy" src="assets/img/committee/zhaoxiangyu.jpg" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>赵翔宇</h4>
-                                        <span>香港城市大学</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="https://www.zoulixin.site">
-                                    <div class="speaker"
-                                    >
-                                        <img loading="lazy" src="assets/img/committee/zoulixin.png" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>邹立新</h4>
-                                        <span>武汉大学</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="tab-content container row justify-content-center" data-aos="fade-up"
-                     data-aos-delay="200">
-                    <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
-                        <h2 class="team-chair">宣传主席</h2>
-                        <div class="row schedule-item">
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="https://jhyin12.github.io/">
-                                    <div class="speaker">
-                                        <img loading="lazy" src="assets/img/speakers/yinjianhua.jpg" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>尹建华</h4>
-                                        <span>山东大学</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="http://www-labs.iro.umontreal.ca/~liubang/">
-                                    <div class="speaker">
-                                        <img loading="lazy" src="assets/img/speakers/liubang.png" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>刘邦</h4>
-                                        <span>加拿大蒙特利尔大学</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="http://faculty.dlut.edu.cn/liuhan/en/index.htm">
-                                    <div class="speaker">
-                                        <img loading="lazy" src="assets/img/speakers/liuhan.jpg" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>刘晗</h4>
-                                        <span>大连理工大学</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab-content container row justify-content-center" data-aos="fade-up"
-                     data-aos-delay="200">
-                    <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
-                        <h2 class="team-chair">网站主席</h2>
-                        <div class="row schedule-item">
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="https://lightchen233.github.io/">
-                                    <div class="speaker">
-                                        <img loading="lazy" src="assets/img/committee/chenqiguang.jpg" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>陈麒光
-                                            <div style="display: inline;color: #59648b;font-size: 12px;">(Chair)</div>
-                                        </h4>
-                                        <span>哈尔滨工业大学</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up" href="http://xcfeng.net/">
-                                    <div class="speaker">
-                                        <img loading="lazy" src="assets/img/committee/fengxiachong.jpg" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>冯夏冲
-                                            <div style="display: inline;color: #59648b;font-size: 12px;">(Vice Chair)
-                                            </div>
-                                        </h4>
-                                        <span>哈尔滨工业大学</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="https://yihengshu.github.io/">
-                                    <div class="speaker">
-                                        <img loading="lazy" src="assets/img/committee/shuyiheng.jpg" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>舒意恒
-                                            <div style="display: inline;color: #59648b;font-size: 12px;">(Vice Chair)
-                                            </div>
-                                        </h4>
-                                        <span>南京大学</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <div class="tab-content container row justify-content-center" data-aos="fade-up"
-                     data-aos-delay="200">
-                    <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
-                        <h2 class="team-chair">在线主席</h2>
-                        <div class="row schedule-item">
-
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up" href="#">
-                                    <div class="speaker">
-                                        <img loading="lazy" src="assets/img/committee/liuhongyu.jpg" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>刘洪宇</h4>
-                                        <span>哈尔滨工业大学</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="https://binliang-nlp.github.io/">
-                                    <div class="speaker">
-                                        <img loading="lazy" src="assets/img/speakers/liangbin.png" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>梁斌</h4>
-                                        <span>哈尔滨工业大学（深圳）</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="https://github.com/mathgirl796">
-                                    <div class="speaker">
-                                        <img loading="lazy" src="assets/img/committee/duanran.jpg" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>段然</h4>
-                                        <span>哈尔滨工业大学</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="tab-content container row justify-content-center" data-aos="fade-up"
-                     data-aos-delay="200">
-                    <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
-                        <h2 class="team-chair">奖励委员会主席</h2>
-                        <div class="row schedule-item">
-
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up" href="#">
-                                    <div class="speaker">
-                                        <img loading="lazy" src="assets/img/committee/wanglehan.jpg" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>王乐涵</h4>
-                                        <span>哈尔滨工业大学</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="https://awake020.github.io/">
-                                    <div class="speaker">
-                                        <img loading="lazy" src="assets/img/committee/weifuxuan.jpg" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>魏福煊</h4>
-                                        <span>哈尔滨工业大学</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
-                                <a class="member aos-init aos-animate" data-aos="fade-up"
-                                   href="https://tianbaoxie.com/">
-                                    <div class="speaker">
-                                        <img loading="lazy" src="assets/img/speakers/xietianbao.jpg" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4>谢天宝</h4>
-                                        <span>香港大学</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">主页</a></li>
+                    <li><a class="nav-link scrollto" href="#about">会议简介</a></li>
+                    <li><a class="nav-link scrollto" href="#schedule">会议日程</a></li>
+                    <li><a class="nav-link scrollto" href="#committee">会议主办方</a></li>
+                    <li><a class="nav-link scrollto" href="#gallery">往期活动</a></li>
+                    <li><a class="nav-link scrollto" href="#footer">联系我们</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+            <a class="buy-tickets scrollto" href="https://space.bilibili.com/168887299" target="_blank">回放</a>
 
         </div>
+    </header><!-- End Header -->
 
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+        <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+        </div>
+    </section><!-- End Hero Section -->
 
-        <!-- ======= Gallery Section ======= -->
-        <section id="gallery">
+    <main id="main">
 
+        <!-- ======= About Section ======= -->
+        <section id="about" class="section-with-bg">
             <div class="container" data-aos="fade-up">
                 <div class="section-header">
-                    <h2>往期活动</h2>
-                    <p>探索 MLNLP 社区的学术研讨会、学术 Talk 等精彩活动。</p>
+                    <h2>会议简介</h2>
+                </div>
+                <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                    <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="about_content">
+                        <div class="about-item">
+                            <p><b>MLNLP 大会</b>旨在为人工智能、机器学习与自然语言处理领域内的学者提供一个学术交流的平台。
+                                本届<b> MLNLP 大会</b>将于<b> 2022 年 11 月 26、27 日</b>线上举行，内容涵盖<b>高效 AI</b>、
+                                <b>推荐系统</b>、<b>机器翻译</b>等 6 个主题论坛，<b>论文实践</b>、<b>圆桌对话</b>等 2 个特色论坛，期待能够促进国内外机器学习、
+                                自然语言处理学术界、产业界和广大爱好者之间的交流与进步。
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section><!-- End About Section -->
 
-            <div class="gallery-slider swiper">
-                <div class="swiper-wrapper align-items-center">
-                    <div class="swiper-slide"><a href="https://www.bilibili.com/video/BV1DW4y1J7Pk" target="_blank"><img
-                            loading="lazy" src="assets/img/gallery/1.png" class="img-fluid" alt=""></a></div>
-                    <div class="swiper-slide"><a href="https://www.bilibili.com/video/BV1kq4y1t7oV" target="_blank"><img
-                            loading="lazy" src="assets/img/gallery/2.png" class="img-fluid" alt=""></a></div>
-                    <div class="swiper-slide"><a href="https://www.bilibili.com/video/BV1zY4y1k722" target="_blank"><img
-                            loading="lazy" src="assets/img/gallery/3.png" class="img-fluid" alt=""></a></div>
-                    <div class="swiper-slide"><a href="https://www.bilibili.com/video/BV1oe411M72N" target="_blank"><img
-                            loading="lazy" src="assets/img/gallery/4.png" class="img-fluid" alt=""></a></div>
-                    <div class="swiper-slide"><a href="https://www.bilibili.com/video/BV1wB4y1r7fa" target="_blank"><img
-                            loading="lazy" src="assets/img/gallery/5.png" class="img-fluid" alt=""></a></div>
+        <!-- ======= Schedule Section ======= -->
+        <section id="schedule" class="section-with-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="section-header">
+                    <h2>会议日程</h2>
+                    <!--						<p>Here is our event schedule</p>-->
+                </div>
+                <h2 class="agenda-title">开幕式</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9 tab-pane agenda-opening" align="center">
+                        <div class="agenda-layout">
+                            <h4>主席致辞 <span style="white-space: pre;word-break: break-word;"> (11月26日 08:50-09:00) <a
+                                        href="https://www.bilibili.com/video/BV1mG411M7i7/" target="_blank"
+                                        style="line-height: 2;"><i class="bi bi-camera-reels-fill"></i></a>
+                                </span></h4>
+                            <div class="row agenda-item">
+                                <a class="speaker" href="https://scholar.google.com/citations?user=a0w5c0gAAAAJ&hl=en"
+                                    target="_blank">
+                                    <img loading="lazy" src="assets/img/speakers/zhouming.jpg" alt="周明">
+                                </a>
+                                <a href="https://scholar.google.com/citations?user=a0w5c0gAAAAJ&hl=en" target="_blank">
+                                    <h4>周明</h4>
+                                    <p class="span-block">MLNLP2022大会主席、澜舟科技创始人、CCF副理事长</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="agenda-title">专题论坛</h2>
+                <ul class="nav nav-tabs tab-head" role="tablist" data-aos="fade-up" data-aos-delay="100">
+                    <li class="nav-item tab-head-item">
+                        <a class="nav-link active" href="#session-1" role="tab" data-bs-toggle="tab">高效 AI</a>
+                    </li>
+                    <li class="nav-item tab-head-item">
+                        <a class="nav-link" href="#session-2" role="tab" data-bs-toggle="tab">推荐系统</a>
+                    </li>
+                    <li class="nav-item tab-head-item">
+                        <a class="nav-link" href="#session-3" role="tab" data-bs-toggle="tab">机器翻译</a>
+                    </li>
+                    <li class="nav-item tab-head-item">
+                        <a class="nav-link" href="#session-4" role="tab" data-bs-toggle="tab">论文实践</a>
+                    </li>
+                    <li class="nav-item tab-head-item">
+                        <a class="nav-link" href="#session-5" role="tab" data-bs-toggle="tab">圆桌对话</a>
+                    </li>
+                    <li class="nav-item tab-head-item">
+                        <a class="nav-link" href="#session-6" role="tab" data-bs-toggle="tab">可信 AI</a>
+                    </li>
+                    <li class="nav-item tab-head-item">
+                        <a class="nav-link" href="#session-7" role="tab" data-bs-toggle="tab">语音处理</a>
+                    </li>
+                    <li class="nav-item tab-head-item">
+                        <a class="nav-link" href="#session-8" role="tab" data-bs-toggle="tab">代码智能</a>
+                    </li>
+                </ul>
+
+
+                <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+                    <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="session-1"></div>
+                    <div role="tabpanel" class="col-lg-9 tab-pane fade show" id="session-2"></div>
+                    <div role="tabpanel" class="col-lg-9 tab-pane fade show" id="session-3"></div>
+                    <div role="tabpanel" class="col-lg-9 tab-pane fade show" id="session-4"></div>
+                    <div role="tabpanel" class="col-lg-9 tab-pane fade show" id="session-5"></div>
+                    <div role="tabpanel" class="col-lg-9 tab-pane fade show" id="session-6"></div>
+                    <div role="tabpanel" class="col-lg-9 tab-pane fade show" id="session-7"></div>
+                    <div role="tabpanel" class="col-lg-9 tab-pane fade show" id="session-8"></div>
 
                 </div>
-                <div class="swiper-pagination"></div>
-            </div>
-
-        </section><!-- End Gallery Section -->
-
-</main><!-- End #main -->
-
-<!-- ======= Footer ======= -->
-<footer id="footer">
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-3 col-md-4 footer-info">
-                    <img src="assets/img/logo-footnote.png" alt="MLNLP">
-                    <p>
-                        MLNLP社区的愿景是促进国内外自然语言处理，机器学习学术界、产业界和广大爱好者之间的交流和进步，特别是初学者同学们的进步。</p>
-                </div>
-
-                <div class="col-lg-3 col-md-4 footer-wechat">
-                    <h4>微信公众号</h4>
-                    <img src="assets/img/wechat.jpg" alt="MLNLP_wechat">
-                </div>
-
-                <div class="col-lg-3 col-md-4 footer-wechat">
-                    <h4>扫码注册</h4>
-                    <img src="assets/img/register.png" alt="MLNLP2022_register">
-                </div>
-
-                <div class="col-lg-3 col-md-6 footer-contact">
-                    <h4>联系我们</h4>
-                    <p>
-                        <strong>邮箱:</strong><a href="mailto:contact@mlnlp2022.com" style="color: #ffffff;">contact@mlnlp2022.com</a><br>
-                    </p>
-
-                    <div class="social-links">
-                        <a href="https://mp.weixin.qq.com/s/j9fSGI1dLy1GXY3GMPXrkg" class="wechat" target="_blank"><i
-                                class="bi bi-wechat"></i></a>
-                        <!--                        <a href="#" class="shipinhao"><i class="bi bi-camera-reels-fill"></i></a>-->
-                        <a href="https://github.com/MLNLP-World" class="github" target="_blank"><i
-                                class="bi bi-github"></i></a>
-                        <a href="https://space.bilibili.com/168887299" class="bilibili" target="_blank"><i><img
-                                src="assets/img/bilibili-fill.svg" alt="Bootstrap" width="20" height="20"></i></a>
+                <h2 class="agenda-title">闭幕式</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9 tab-pane agenda-opening" align="center">
+                        <div class="agenda-layout">
+                            <h4>大会总结 <span style="white-space: pre;word-break: break-word;"> (11月27日 18:20-18:30) <a
+                                        href="https://www.bilibili.com/video/BV1HR4y117UH/" target="_blank"
+                                        style="line-height: 2;"><i class="bi bi-camera-reels-fill"></i></a>
+                                </span></h4>
+                            <div class="row agenda-item">
+                                <a class="speaker" href="http://siviltaram.github.io" target="_blank">
+                                    <img loading="lazy" src="assets/img/speakers/liuqian.png" alt="刘乾">
+                                </a>
+                                <a href="http://siviltaram.github.io" target="_blank">
+                                    <h4>刘乾</h4>
+                                    <p class="span-block">MLNLP2022程序委员会主席、Sea AI Lab研究科学家</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </div>
-        </div>
-    </div>
 
-    <div class="container">
-        <div class="copyright">
-            &copy; Copyright <strong>TheEvent</strong>. Modified by <strong>MLNLP</strong>. All Rights Reserved
+        </section><!-- End Schedule Section -->
+
+        <!-- ======= Venue Section ======= -->
+        <section id="committee">
+            <div class="container">
+                <div class="section-header">
+                    <h2>会议主办方</h2>
+                </div>
+
+                <section class="section team">
+                    <div class="tab-content container row justify-content-center" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+                            <h2 class="team-chair">大会主席</h2>
+                            <div class="row schedule-item">
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="https://yanshuicheng.ai/">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/speakers/yanshuicheng.png" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>颜水成</h4>
+                                            <span>Sea AI Lab</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="https://scholar.google.com/citations?user=a0w5c0gAAAAJ&hl=en">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/speakers/zhouming.jpg" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>周明</h4>
+                                            <span>澜舟科技</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="http://faculty.hitsz.edu.cn/xuruifeng">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/speakers/xuruifeng.png" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>徐睿峰</h4>
+                                            <span>哈尔滨工业大学（深圳）</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content container row justify-content-center" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+                            <h2 class="team-chair">程序委员会主席</h2>
+                            <div class="row schedule-item">
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="https://siviltaram.github.io">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/committee/liuqian.jpg" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>刘乾</h4>
+                                            <span>Sea AI Lab</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="http://www.personal.psu.edu/dux19/">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/committee/xudongkuan.jpg" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>胥栋宽</h4>
+                                            <span>北卡州立大学</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="http://homepage.hit.edu.cn/stanzhao">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/speakers/zhaosendong.png" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>赵森栋</h4>
+                                            <span>哈尔滨工业大学</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content container row justify-content-center" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+                            <h2 class="team-chair">论坛主席(姓氏首字母排序) </h2>
+                            <div class="row schedule-item" style="padding-top: 0px;">
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="https://chenchongthu.github.io">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/committee/chenchong.png" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>陈冲</h4>
+                                            <span>华为云</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="https://mengnandu.com/">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/committee/dumengnan.jpg" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>杜梦楠</h4>
+                                            <span>美国德州农工大学</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="https://thucsthanxu13.github.io">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/committee/hanxu.jpg" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>韩旭</h4>
+                                            <span>清华大学</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="https://www.nlplab.com/teamContent?id=145&isStudent=false">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/committee/libei.jpg" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>李北</h4>
+                                            <span>东北大学</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up" href="">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/committee/liuhongyu.jpg" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>刘洪宇</h4>
+                                            <span>哈尔滨工业大学</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="https://siviltaram.github.io">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/committee/liuqian.jpg" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>刘乾</h4>
+                                            <span>Sea AI Lab</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="https://edwardzh.github.io">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/committee/liuzhenghao.jpg" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>刘正皓</h4>
+                                            <span>东北大学</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="https://p2333.github.io/">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/committee/pangtianyu.jpg" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>庞天宇</h4>
+                                            <span>Sea AI Lab</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="https://rayeren.github.io/">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/committee/renyi.png" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>任意</h4>
+                                            <span>Sea AI Lab</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="https://yaqingwang.github.io/">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/committee/wangyaqing.jpg" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>王亚庆</h4>
+                                            <span>谷歌研究院</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="http://www.personal.psu.edu/dux19/">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/committee/xudongkuan.jpg" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>胥栋宽</h4>
+                                            <span>北卡州立大学</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="https://xiaoyuanyi.github.io">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/committee/yixiaoyuan.png" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>矣晓沅</h4>
+                                            <span>微软亚洲研究院</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="https://zhaoxyai.github.io/">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/committee/zhaoxiangyu.jpg" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>赵翔宇</h4>
+                                            <span>香港城市大学</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="https://www.zoulixin.site">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/committee/zoulixin.png" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>邹立新</h4>
+                                            <span>武汉大学</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-content container row justify-content-center" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+                            <h2 class="team-chair">宣传主席</h2>
+                            <div class="row schedule-item">
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="https://jhyin12.github.io/">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/speakers/yinjianhua.jpg" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>尹建华</h4>
+                                            <span>山东大学</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="http://www-labs.iro.umontreal.ca/~liubang/">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/speakers/liubang.png" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>刘邦</h4>
+                                            <span>加拿大蒙特利尔大学</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="http://faculty.dlut.edu.cn/liuhan/en/index.htm">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/speakers/liuhan.jpg" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>刘晗</h4>
+                                            <span>大连理工大学</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content container row justify-content-center" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+                            <h2 class="team-chair">网站主席</h2>
+                            <div class="row schedule-item">
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="https://lightchen233.github.io/">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/committee/chenqiguang.jpg" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>陈麒光
+                                                <div style="display: inline;color: #59648b;font-size: 12px;">(Chair)
+                                                </div>
+                                            </h4>
+                                            <span>哈尔滨工业大学</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up" href="http://xcfeng.net/">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/committee/fengxiachong.jpg" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>冯夏冲
+                                                <div style="display: inline;color: #59648b;font-size: 12px;">(Vice
+                                                    Chair)
+                                                </div>
+                                            </h4>
+                                            <span>哈尔滨工业大学</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="https://yihengshu.github.io/">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/committee/shuyiheng.jpg" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>舒意恒
+                                                <div style="display: inline;color: #59648b;font-size: 12px;">(Vice
+                                                    Chair)
+                                                </div>
+                                            </h4>
+                                            <span>南京大学</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="tab-content container row justify-content-center" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+                            <h2 class="team-chair">在线主席</h2>
+                            <div class="row schedule-item">
+
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up" href="#">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/committee/liuhongyu.jpg" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>刘洪宇</h4>
+                                            <span>哈尔滨工业大学</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="https://binliang-nlp.github.io/">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/speakers/liangbin.png" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>梁斌</h4>
+                                            <span>哈尔滨工业大学（深圳）</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="https://github.com/mathgirl796">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/committee/duanran.jpg" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>段然</h4>
+                                            <span>哈尔滨工业大学</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-content container row justify-content-center" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+                            <h2 class="team-chair">奖励委员会主席</h2>
+                            <div class="row schedule-item">
+
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up" href="#">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/committee/wanglehan.jpg" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>王乐涵</h4>
+                                            <span>哈尔滨工业大学</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="https://awake020.github.io/">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/committee/weifuxuan.jpg" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>魏福煊</h4>
+                                            <span>哈尔滨工业大学</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 d-flex align-items-stretch schedule-card">
+                                    <a class="member aos-init aos-animate" data-aos="fade-up"
+                                        href="https://tianbaoxie.com/">
+                                        <div class="speaker">
+                                            <img loading="lazy" src="assets/img/speakers/xietianbao.jpg" alt="">
+                                        </div>
+                                        <div class="member-info">
+                                            <h4>谢天宝</h4>
+                                            <span>香港大学</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+
+
+            <!-- ======= Gallery Section ======= -->
+            <section id="gallery">
+
+                <div class="container" data-aos="fade-up">
+                    <div class="section-header">
+                        <h2>往期活动</h2>
+                        <p>探索 MLNLP 社区的学术研讨会、学术 Talk 等精彩活动。</p>
+                    </div>
+                </div>
+
+                <div class="gallery-slider swiper">
+                    <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide"><a href="https://www.bilibili.com/video/BV1DW4y1J7Pk"
+                                target="_blank"><img loading="lazy" src="assets/img/gallery/1.png" class="img-fluid"
+                                    alt=""></a></div>
+                        <div class="swiper-slide"><a href="https://www.bilibili.com/video/BV1kq4y1t7oV"
+                                target="_blank"><img loading="lazy" src="assets/img/gallery/2.png" class="img-fluid"
+                                    alt=""></a></div>
+                        <div class="swiper-slide"><a href="https://www.bilibili.com/video/BV1zY4y1k722"
+                                target="_blank"><img loading="lazy" src="assets/img/gallery/3.png" class="img-fluid"
+                                    alt=""></a></div>
+                        <div class="swiper-slide"><a href="https://www.bilibili.com/video/BV1oe411M72N"
+                                target="_blank"><img loading="lazy" src="assets/img/gallery/4.png" class="img-fluid"
+                                    alt=""></a></div>
+                        <div class="swiper-slide"><a href="https://www.bilibili.com/video/BV1wB4y1r7fa"
+                                target="_blank"><img loading="lazy" src="assets/img/gallery/5.png" class="img-fluid"
+                                    alt=""></a></div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </section><!-- End Gallery Section -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-4 footer-info">
+                        <img src="assets/img/logo-footnote.png" alt="MLNLP">
+                        <p>
+                            MLNLP社区的愿景是促进国内外自然语言处理，机器学习学术界、产业界和广大爱好者之间的交流和进步，特别是初学者同学们的进步。</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 footer-wechat">
+                        <h4>微信公众号</h4>
+                        <img src="assets/img/wechat.jpg" alt="MLNLP_wechat">
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 footer-wechat">
+                        <h4>扫码注册</h4>
+                        <img src="assets/img/register.png" alt="MLNLP2022_register">
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h4>联系我们</h4>
+                        <p>
+                            <strong>邮箱:</strong><a href="mailto:contact@mlnlp2022.com"
+                                style="color: #ffffff;">contact@mlnlp2022.com</a><br>
+                        </p>
+
+                        <div class="social-links">
+                            <a href="https://mp.weixin.qq.com/s/j9fSGI1dLy1GXY3GMPXrkg" class="wechat"
+                                target="_blank"><i class="bi bi-wechat"></i></a>
+                            <!--                        <a href="#" class="shipinhao"><i class="bi bi-camera-reels-fill"></i></a>-->
+                            <a href="https://github.com/MLNLP-World" class="github" target="_blank"><i
+                                    class="bi bi-github"></i></a>
+                            <a href="https://space.bilibili.com/168887299" class="bilibili" target="_blank"><i><img
+                                        src="assets/img/bilibili-fill.svg" alt="Bootstrap" width="20"
+                                        height="20"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <div class="credits">
-            <!--
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong>TheEvent</strong>. Modified by <strong>MLNLP</strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!--
 All the links in the footer should remain intact.
 You can delete the links only if you purchased the pro version.
 Licensing information: https://bootstrapmade.com/license/
 Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
 -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
         </div>
-    </div>
-</footer><!-- End  Footer -->
+    </footer><!-- End  Footer -->
 
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-        class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
 
-<!-- Vendor JS Files -->
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-<!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 
